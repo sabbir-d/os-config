@@ -77,7 +77,5 @@
       "statusBar.noFolderBackground": "#222225",
       "statusBar.debuggingBackground": "#511f1f" */
     },
-    "workbench.iconTheme": "helium-icon-theme", //extension
-    "workbench.colorTheme": "Ghibli's Spirited Away", // color font the folder that does not have any icon built in
-    "material-icon-theme.folders.color": "#b342f5",
+    "material-icon-theme.folders.color": "#b342f5", // color font the folder that does not have any icon built in
   }

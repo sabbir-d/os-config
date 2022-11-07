@@ -25,6 +25,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode", //extension
     "editor.parameterHints.enabled": false,
     "editor.hover.above": false,
+    "editor.renderWhitespace": "boundary",
     
     // set default formatter specifically
     "[html]": {
@@ -76,6 +77,7 @@
       "statusBar.background": "#222225",
       "statusBar.noFolderBackground": "#222225",
       "statusBar.debuggingBackground": "#511f1f" */
+      "editorWhitespace.foreground": "#606b8d"
     },
     "material-icon-theme.folders.color": "#b342f5", // color font the folder that does not have any icon built in
   }

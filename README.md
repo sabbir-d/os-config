@@ -15,10 +15,7 @@
 5. paste to the copied code here and save
 ```
 
-## coding font
-- [jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)
-
-## extensions
+## vscode extensions
 
 - better comments
 - es7+react/redux native snippets
@@ -30,6 +27,9 @@
 - prettier code formatter
 - live server
 - live share (optional)
+
+## coding font
+- [jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)
 
 ## Install git bash
 
@@ -59,7 +59,7 @@
  &nbsp;
 ---
 
-# Python devs
+# Python (for windows)
 
 ## install vs build tools
 - [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
@@ -102,7 +102,7 @@ _**Now code will run lot faster**_
  &nbsp;
 ---
 
-# Linux-environment (for ubuntu)
+# Python (for ubuntu)
 ## install python & jupyter notebook
 
 1. setting up python - `once`

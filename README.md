@@ -1,11 +1,6 @@
 # Programming environment for devs
-# Essential software
-- [install vscode](#install-vscode)
-- [install gitbash](#install-git-bash)
-- [install windows terminal](#install-windows-terminal)
-- [install postman](#install-postman)
 
-# install vscode
+## install vscode
 [vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)
 > customize vscode
 

@@ -65,11 +65,6 @@
 ---
 
 # Python devs
-- [install vs build tools](#install-vs-build-tools)
-- [install python and anaconda](#install-python-using-anaconda-distribution)
-- [setup jupyter notebook](#run-jupyter-notebook-on-browser)
-- [colab local server](#colab-local-server)
-- [for linux](#linux-environment)
 
 ## install vs build tools
 - [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)

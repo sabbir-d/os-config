@@ -6,10 +6,10 @@
 - [install postman](#install-postman)
 
 # install vscode
-[vscode download link](https://code.visualstudio.com/)
+[vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)
 > customize vscode
 
-[customized jsonc link](https://github.com/sabbir-dcy/os-config/blob/main/vscode-settings.json)
+[customized jsonc link](https://github.com/sabbir-dcy/os-config/blob/main/vscode-settings.jsonc)
 
 ```bash
 1. copy full json code from the link above
@@ -19,6 +19,9 @@
 5. clear all previous code if there is any.
 5. paste to the copied code here and save
 ```
+
+## coding font
+- [jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)
 
 ## extensions
 
@@ -35,7 +38,7 @@
 
 ## Install git bash
 
-- download gitbash from [official website](https://git-scm.com/downloads)
+- download gitbash from [official website](https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe)
 - install git bash keeping all the settings to default
 - click next next
 
@@ -54,7 +57,7 @@
 9. go startup tab and choose gitbash as default profile
 
 ## Install postman
-- [postman for desktop](https://www.postman.com/downloads/)
+- [postman for desktop](https://dl.pstmn.io/download/latest/win64)
 
 
 \
@@ -70,12 +73,12 @@
 
 ## install vs build tools
 - [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
-- select _desktop development with c++_
-- [reference image]()
+- install _desktop development with c++_
+- [reference image](https://github.com/sabbir-dcy/os-config/blob/main/Screenshot%202022-11-21%20223152.png)
 
 ## Install python using anaconda distribution
 
-- download conda from [official website](https://www.anaconda.com/products/distribution)
+- download conda from [official website](https://repo.anaconda.com/archive/Anaconda3-2022.10-Windows-x86_64.exe)
 - click next next untill `advance installation option`
 - check both of the options
 
@@ -223,10 +226,9 @@ jupyter notebook \
 
 ## install node
 
-- [node download link](https://nodejs.org/en/)
+- [node download link](https://nodejs.org/dist/v18.12.1/node-v18.12.1-x64.msi)
 
 ```bash
-download the recommended version and install .msi file
 just agree and click next next
 ```
 

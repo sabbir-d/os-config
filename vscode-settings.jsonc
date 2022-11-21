@@ -2,7 +2,7 @@
     "window.menuBarVisibility": "compact",
   
     // editor -->
-    "editor.fontFamily": "consolas, jetbrains mono, fira code, roboto mono, monospace",
+    "editor.fontFamily": "jetbrains mono, fira code, roboto mono, monospace",
     "editor.fontSize": 18,
     "editor.fontLigatures": true,
     "editor.fontWeight": "400",

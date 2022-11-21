@@ -39,7 +39,7 @@
 
 ## Install windows terminal
 
-1. download windows terminal from [MS store](https://www.microsoft.com/store/apps/9n0dx20hk701){:target="_blank"}
+1. download windows terminal from <a href="https://www.microsoft.com/store/apps/9n0dx20hk701" target="_blank">MS store</a>
 > to setup git bash in windows terminal follow the steps below
 3. open windows terminal and go to settings
 4. add new profile

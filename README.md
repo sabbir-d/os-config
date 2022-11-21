@@ -40,6 +40,7 @@
 ## Install windows terminal
 
 1. download windows terminal from <a href="https://www.microsoft.com/store/apps/9n0dx20hk701" target="_blank">MS store</a>
+
 > to setup git bash in windows terminal follow the steps below
 3. open windows terminal and go to settings
 4. add new profile
@@ -63,7 +64,7 @@
 
 ## install vs build tools
 - [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
-- install _desktop development with c++_
+- install `desktop development with c++`
 - [reference image](https://github.com/sabbir-dcy/os-config/blob/main/Screenshot%202022-11-21%20223152.png)
 
 ## Install python using anaconda distribution

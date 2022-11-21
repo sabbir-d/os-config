@@ -60,7 +60,7 @@
  &nbsp;
 ---
 
-# for python devs
+# Python devs
 - [install python and anaconda](#install-python-using-anaconda-distribution)
 - [setup jupyter notebook](#run-jupyter-notebook-on-browser)
 - [colab local server](#colab-local-server)
@@ -185,9 +185,9 @@ jupyter notebook \
  &nbsp;
 ---
 
-# For React devs
+# React devs
 ## client packages ||
-
+- [install nodejs](#install-node)
 - [create react app](#create-react-app)
 - [Tailwind and daisyui](#tailwind)
 - [firebase integration](#firebase-integration)

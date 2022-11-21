@@ -56,15 +56,23 @@
 ## Install postman
 - [postman for desktop](https://www.postman.com/downloads/)
 
+
 \
  &nbsp;
 ---
 
 # Python devs
+- [install vs build tools](#install-vs-build-tools)
 - [install python and anaconda](#install-python-using-anaconda-distribution)
 - [setup jupyter notebook](#run-jupyter-notebook-on-browser)
 - [colab local server](#colab-local-server)
 - [for linux](#linux-environment)
+
+## install vs build tools
+- [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+- select _desktop development with c++_
+- [reference image]()
+
 ## Install python using anaconda distribution
 
 - download conda from [official website](https://www.anaconda.com/products/distribution)

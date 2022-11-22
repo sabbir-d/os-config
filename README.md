@@ -6,7 +6,7 @@
 
 [customized jsonc link](https://github.com/sabbir-dcy/os-config/blob/main/vscode-settings.jsonc)
 
-```bash
+```
 1. copy full json code from the link above
 2. open vscode
 3. press ctrl + shift + p

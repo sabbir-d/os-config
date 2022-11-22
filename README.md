@@ -84,7 +84,7 @@ _**this will create notebook file on default browser**_
 
 ## Colab local server
 
-> if you are using google colab instead of jupyter notebook you can also use this local compiler for colab
+> using google colab instead of jupyter notebook you can also use this local compiler for colab
 
 1. copy paste the commands below in terminal
 ```sh
@@ -96,7 +96,6 @@ jupyter notebook --NotebookApp.allow_origin="https://colab.research.google.com" 
 ```
 2. now the token URL (_local host one_) generated in terminal: [reference image](https://robotwealth.com/wp-content/uploads/2020/11/jupyter-local.png)
 3. In Colab, click the `Connect` button and select `Connect to local runtime`. Enter the token URL you just copied and click `Connect`: [reference image](https://robotwealth.com/wp-content/uploads/2020/11/colab-connect-local.png)\
-_**Now code will run lot faster**_
 
 
 \
@@ -252,7 +251,7 @@ firebase login
 # after redirect to browser login with google account and give access
 ```
 
-- `if you face any issue while hosting app on firebase use following commands`
+- `any issue while hosting app on firebase use following commands`
 
 ```bash
 firebase login --reauth
@@ -293,9 +292,7 @@ yarn run dev #or for local area network access
 yarn run dev --host
 ```
 
-## [tailwind](https://tailwindcss.com/docs/guides/create-react-app)
-
-## +[Daisy ui](https://daisyui.com/docs/install/)
+## [tailwind](https://tailwindcss.com/docs/guides/create-react-app) +[Daisy ui](https://daisyui.com/docs/install/)
 
 ```bash
 yarn add -D tailwindcss postcss autoprefixer
@@ -311,7 +308,7 @@ yarn add daisyui
 
 - tailwind.config.js ->
 
-_tip - if you face webpack error while editing config.js file, restart the client_
+_tip - face webpack error while editing config.js file? restart the client_
 
 ```js
 /** @type {import('tailwindcss').Config} */
@@ -1064,7 +1061,7 @@ npm install express cors mongodb dotenv jsonwebtoken
 yarn init -y
 yarn add express cors mongodb dotenv jsonwebtoken
 
-# if use yarn you need to add *script* manually to package.json file
+# for yarn add *script* manually to package.json file
   "scripts": {
     "start": "node index.js",
     "start-dev": "nodemon index.js"

@@ -260,7 +260,7 @@ firebase use --add
 
 ## heroku install
 
-- [heroku cli download link](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
+- [heroku cli download link](https://cli-assets.heroku.com/heroku-x64.exe)
 - download 64 for windows 10/11 or mac version according to your os
 - install the exe file
 - click next next

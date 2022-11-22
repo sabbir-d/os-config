@@ -261,7 +261,6 @@ firebase use --add
 ## heroku install
 
 - [heroku cli download link](https://cli-assets.heroku.com/heroku-x64.exe)
-- download 64 for windows 10/11 or mac version according to your os
 - install the exe file
 - click next next
 - after installing run the following command on terminal
@@ -292,7 +291,7 @@ yarn run dev #or for local area network access
 yarn run dev --host
 ```
 
-## [tailwind](https://tailwindcss.com/docs/guides/create-react-app) +[Daisy ui](https://daisyui.com/docs/install/)
+## [tailwind](https://tailwindcss.com/docs/guides/create-react-app)+[Daisy ui](https://daisyui.com/docs/install/)
 
 ```bash
 yarn add -D tailwindcss postcss autoprefixer

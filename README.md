@@ -84,7 +84,7 @@ _**this will create notebook file on default browser**_
 
 ## Colab local server
 
-> using google colab instead of jupyter notebook you can also use this local compiler for colab
+> how to use jupyter notebook as colab local runtime?
 
 1. copy paste the commands below in terminal
 ```sh

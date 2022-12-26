@@ -3,7 +3,7 @@
   
     // editor -->
     "editor.fontFamily": "jetbrains mono, fira code, roboto mono, monospace",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.fontWeight": "400",
     "editor.cursorWidth": 3,

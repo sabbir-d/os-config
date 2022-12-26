@@ -1,7 +1,13 @@
 # Programming environment for devs
 
-## install vscode
+- [vscode](##install-vscode)
+- [git](##Install-git-bash)
+- [mern stack](##Install-postman)
+- [python devs](#Python-for-windows)
+## Install vscode
+
 [vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)
+
 > customize vscode
 
 [customized jsonc link](https://github.com/sabbir-dcy/os-config/blob/main/vscode-settings.jsonc)
@@ -25,10 +31,13 @@
 - auto rename tag
 - material icon theme
 - prettier code formatter
-- live server
-- live share (optional)
+- live server (for vanila html, css, js project)
+- live share (for sharing code)
+- code runner (for c++ or python)
+- fluent icons (minimul interface icons)
 
 ## coding font
+
 - [jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)
 
 ## Install git bash
@@ -40,29 +49,91 @@
 ## Install windows terminal
 
 1. download windows terminal from <a href="https://www.microsoft.com/store/apps/9n0dx20hk701" target="_blank">MS store</a>
-
-> to setup git bash in windows terminal follow the steps below
-3. open windows terminal and go to settings
-4. add new profile
-5. click new empty profile
-6. change the name to **gitbash**
-7. replace the command line with this location
-   `C:\Program Files\Git\bin\bash.exe`
-8. choose custom icon or use default icon from this location
-   `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
-9. go startup tab and choose gitbash as default profile
+2. to setup git bash in windows terminal follow the steps below :
+-  open windows terminal and go to settings
+- click add new profile
+- click new empty profile
+- change the name to **gitbash** or **bash** upon ur like
+- replace the command line url with gitbash url 
+>`C:\Program Files\Git\bin\bash.exe` 
+- choose custom icon or use default gitbsh icon from this location
+> `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
+- go startup tab and choose gitbash as default profile
 
 ## Install postman
+
 - [postman for desktop](https://dl.pstmn.io/download/latest/win64)
 
+## Install node
 
-\
- &nbsp;
----
+- [node download link](https://nodejs.org/en/download)
+- download LTS version for windows x64 .msi installer
 
-# Python (for windows)
+```bash
+just agree and click next next
+```
+
+## for yarn users install yarn globally
+- although node comes with built in npm package manager if u wish u can use yarn as package manager by installing yarn globally
+
+```bash
+npm install --global yarn
+```
+
+## install nodemon globally for backend
+- for realtime load of backend server
+
+```bash
+npm install -g nodemon
+#or
+yarn global add nodemon
+```
+
+## Install mongodb(NoSql)
+[mongodb download link](https://repo.mongodb.org/yum/amazon/2/mongodb-org/6.0/x86_64/RPMS/mongodb-org-server-6.0.3-1.amzn2.x86_64.rpm)
+
+```bash
+click install, just agree and choose complete installation
+```
+
+- it will automatically download and install monogo compass(data base ui) which will take few extra minutes.
+
+[mongodb shell download](https://downloads.mongodb.com/compass/mongodb-mongosh_1.6.1_amd64.deb?_ga=2.66967086.1814885739.1671987424-986248264.1671987424)
+- mongo shell (interactive JavaScript interface to MongoDB) which will allow us to iterect with database using command line
+- unzip the file and rename it something like **mongosh**
+- move this mongosh folder to this location
+> `C:\Program Files`
+- now press start button and type **environment variables**
+- open ***edit environment variable*** inside **advance** tab at the bottom open **enviroment variables**
+- in **system variables** select **path** and click **edit**
+- click new and paste this location url
+>`C:\Program Files\mongosh\bin`
+- click ok and get out of there
+- now open a new terminal and type **mongosh** and press enter
+- you should see mongosh log id, connection and other information
+
+## React web dev
+### create react application using vite
+- open windows terminal and run the  command bellow
+```bash
+yarn create vite
+or
+npm create vite@latest
+```
+- type project name. eg -> portfolio-react
+- press enter and choose **react** from the option using arrow key
+- press enter and choose the language u prefer **javascript** or **typescript**
+> **swc** one for rust based web bundler
+- and run the commands bellow
+
+```bash
+cd portfolio-react
+yarn
+```
+# Python for windows
 
 ## install vs build tools
+
 - [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 - install `desktop development with c++`
 - [reference image](https://github.com/sabbir-dcy/os-config/blob/main/Screenshot%202022-11-21%20223152.png)
@@ -75,11 +146,12 @@
 
 ## Run jupyter notebook on browser
 
--  open terminal and run the commands below
+- open terminal and run the commands below
 
 ```sh
 jupyter notebook
 ```
+
 _**this will create notebook file on default browser**_
 
 ## Colab local server
@@ -87,6 +159,7 @@ _**this will create notebook file on default browser**_
 > how to use jupyter notebook as colab local runtime?
 
 1. copy paste the commands below in terminal
+
 ```sh
 pip install jupyter_http_over_ws
 ```
@@ -94,15 +167,12 @@ pip install jupyter_http_over_ws
 ```sh
 jupyter notebook --NotebookApp.allow_origin="https://colab.research.google.com" --port=8888 --NotebookApp.port_retries=0
 ```
+
 2. now the token URL (_local host one_) generated in terminal: [reference image](https://robotwealth.com/wp-content/uploads/2020/11/jupyter-local.png)
 3. In Colab, click the `Connect` button and select `Connect to local runtime`. Enter the token URL you just copied and click `Connect`: [reference image](https://robotwealth.com/wp-content/uploads/2020/11/colab-connect-local.png)\
 
-
-\
- &nbsp;
----
-
 # Python (for ubuntu)
+
 ## install python & jupyter notebook
 
 1. setting up python - `once`
@@ -126,11 +196,13 @@ sudo -H pip3 install virtualenv
 ```
 
 3. create a python project directory - `once`
+
 ```sh
 mkdir ~/python_project
 ```
 
 4. move inside of that directory - `once`
+
 ```sh
 cd ~/python_project
 ```
@@ -145,8 +217,8 @@ virtualenv python_virtual_env
 source python_virtual_env/bin/activate
 ```
 
->now your terminal prefix should look similar to this
- `(python_virtual_env) example@host:~/python_project_dir$`
+> now your terminal prefix should look similar to this
+> `(python_virtual_env) example@host:~/python_project_dir$`
 
 6. installing jupyter - `once`
 
@@ -173,8 +245,10 @@ jupyter serverextension enable --py jupyter_http_over_ws
 ```
 
 9. run jupyter as local runtime
+
 - go to your python environment directory we created earlier
 - run command below
+
 ```sh
 jupyter notebook \
   --NotebookApp.allow_origin='https://colab.research.google.com' \
@@ -184,10 +258,13 @@ jupyter notebook \
 
 \
  &nbsp;
+
 ---
 
 # React devs
+
 ## client packages ||
+
 - [install nodejs](#install-node)
 - [create react app](#create-react-app)
 - [Tailwind and daisyui](#tailwind)
@@ -235,8 +312,6 @@ npm install -g nodemon
 #or
 yarn global add nodemon
 ```
-
-
 
 ## firebase install
 

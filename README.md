@@ -1,26 +1,24 @@
-# Programming environment for devs
-
-- [vscode](##install-vscode)
-- [git](##Install-git-bash)
-- [mern stack](##Install-postman)
-- [python devs](#Python-for-windows)
-## Install vscode
+- [vscode](##INSTALL-VSCODE)
+- [git](##INSTALL-GIT-BASH)
+- [mern stack](##INSTALL-POSTMAN)
+- [python devs](#PYTHON-FOR-WINDOWS-USER)
+## INSTALL VSCODE
 
 [vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)
 
-> customize vscode
+### *customize vscode*
 
 [customized jsonc link](https://github.com/sabbir-dcy/os-config/blob/main/vscode-settings.jsonc)
 
 ```
-1. copy full json code from the link above
-2. open vscode
-3. press ctrl + shift + p
-4. search for `open user settings (json)`
-5. paste the copied code here and save
+- copy full json code from the link above
+- open vscode
+- press ctrl + shift + p
+- search for `open user settings (json)`
+- paste the copied code here and save
 ```
 
-## vscode extensions
+### *vscode extensions*
 
 - better comments
 - es7+react/redux native snippets
@@ -35,17 +33,17 @@
 - code runner (for c++ or python)
 - fluent icons (minimul interface icons)
 
-## coding font
+## CODING FONT
 
-- [jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)
+[jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)
 
-## Install git bash
+## INSTALL GIT BASH
 
-- download gitbash from [official website](https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe)
+download gitbash from [official website](https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe)
 - install git bash keeping all the settings to default
 - click next next
 
-## Install windows terminal
+## INSTALL WINDOWS TERMINAL
 
 1. download windows terminal from <a href="https://www.microsoft.com/store/apps/9n0dx20hk701" target="_blank">MS store</a> on windows 10 (windows 11 have this terminal by default)
 2. to setup git bash in windows terminal follow the steps below :
@@ -59,29 +57,29 @@
 	>`C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
 	- go startup tab and choose gitbash as default profile
 ---
-## Install postman
+## INSTALL POSTMAN
 
-- [postman for desktop](https://dl.pstmn.io/download/latest/win64)
+[postman for desktop](https://dl.pstmn.io/download/latest/win64)
 
 ---
 
-## Install node
+## INSTALL NODE
 
-- [node download link](https://nodejs.org/en/download)
+[node download link](https://nodejs.org/en/download)
 - download LTS version for windows x64 .msi installer
 
 ```bash
 just agree and click next next
 ```
 
-## for yarn users install yarn globally
+### *for yarn users install yarn globally*
 - although node comes with built in npm package manager if u wish u can use yarn as package manager by installing yarn globally
 
 ```bash
 npm install --global yarn
 ```
 
-## install nodemon globally for backend
+### *install nodemon globally for backend*
 - for realtime load of backend server
 
 ```bash
@@ -92,7 +90,7 @@ yarn global add nodemon
 
 ---
 
-## Install mongodb(NoSql)
+## INSTALL MONGODB(NoSql)
 [mongodb download link](https://repo.mongodb.org/yum/amazon/2/mongodb-org/6.0/x86_64/RPMS/mongodb-org-server-6.0.3-1.amzn2.x86_64.rpm)
 
 ```bash
@@ -114,9 +112,9 @@ click install, just agree and choose complete installation
 - click ok and get out of there
 - now open a new terminal and type **mongosh** and press enter
 - you should see mongosh log id, connection and other information
-
-## React web dev
-### create react application using vite
+---
+## REACT WEB DEV
+### *create react application using vite*
 - open windows terminal and run the  command bellow
 ```bash
 yarn create vite
@@ -131,36 +129,33 @@ npm create vite@latest
 
 ```bash
 cd portfolio-react
-yarn
+yarn or npm install
 ```
 
----
-## environment variable
+### *environment variable*
 - .env file example
 `VITE_keyName=authentication key`
 - using variable
 `import.meta.env.VITE_keyName`
 
+### *vite build guide*
+[vite official docs](https://vitejs.dev/guide/static-deploy.html)
+
 ---
+## PYTHON FOR WINDOWS USER
 
-## vite build guide
-- [vite official docs](https://vitejs.dev/guide/static-deploy.html)
----
-# Python for windows
-
-## install vs build tools
-
-- [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+### *install vs build tools*
+[download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 - install `desktop development with c++`
 -  ![vs_build](image/vs_build.png)
 
-## Install python using anaconda distribution
+### *install python using anaconda distribution*
 
 - download conda from [official website](https://repo.anaconda.com/archive/Anaconda3-2022.10-Windows-x86_64.exe)
 - click next next untill `advance installation option`
 - check both of the options
 
-## Run jupyter notebook on browser
+### *run jupyter notebook on browser*
 
 - open terminal and run the commands below
 
@@ -168,9 +163,7 @@ yarn
 jupyter notebook
 ```
 
-_**this will create notebook file on default browser**_
-
-## Colab local server
+### *Colab local server*
 
 > how to use jupyter notebook as colab local runtime?
 
@@ -184,10 +177,11 @@ pip install jupyter_http_over_ws
 jupyter notebook --NotebookApp.allow_origin="https://colab.research.google.com" --port=8888 --NotebookApp.port_retries=0
 ```
 
-2. now the token URL (_local host one_) generated in terminal: [reference image](https://robotwealth.com/wp-content/uploads/2020/11/jupyter-local.png)
-3. In Colab, click the `Connect` button and select `Connect to local runtime`. Enter the token URL you just copied and click `Connect`: [reference image](https://robotwealth.com/wp-content/uploads/2020/11/colab-connect-local.png)\
+2. now the token URL (_local host one_) generated in terminal: ![reference image](https://robotwealth.com/wp-content/uploads/2020/11/jupyter-local.png)
+3. In Colab, click the `Connect` button and select `Connect to local runtime`. Enter the token URL you just copied and click `Connect`: 
+![reference image](https://robotwealth.com/wp-content/uploads/2020/11/colab-connect-local.png)
 
-# Python (for ubuntu)
+## PYTHON (for ubuntu)
 
 ## install python & jupyter notebook
 
@@ -309,39 +303,6 @@ firebase login --reauth
 firebase use --add
 ```
 
-## heroku install
-
-- [heroku cli download link](https://cli-assets.heroku.com/heroku-x64.exe)
-- install the exe file
-- click next next
-- after installing run the following command on terminal
-
-```bash
-heroku login
-```
-
-- press any key to open browser
-- complete login process
-
-## create react app
-
-```bash
-npx create-react-app my-app
-#or
-yarn create react-app my-app
-
-#create react app with vite
-yarn create vite
-Project name: » first-react-project
-Select a framework: » react
-Select a variant: » react
-cd first-react-project
-yarn
-code .
-yarn run dev #or for local area network access
-yarn run dev --host
-```
-
 ## [tailwind](https://tailwindcss.com/docs/guides/create-react-app)+[Daisy ui](https://daisyui.com/docs/install/)
 
 ```bash
@@ -352,13 +313,23 @@ yarn add -D tailwindcss postcss autoprefixer
 yarn tailwindcss init -p
 ```
 
+- tailwind.config.js ->
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+	extend: {},
+  }
+  plugins: [],
+};
+```
+
+- modification with daisy Ui
 ```bash
 yarn add daisyui
 ```
-
-- tailwind.config.js ->
-
-_tip - face webpack error while editing config.js file? restart the client_
 
 ```js
 /** @type {import('tailwindcss').Config} */
@@ -371,6 +342,7 @@ module.exports = {
       colors: {
         primary: "#0080ff",
       },
+      fontFamily: {}
     },
   },
   daisyui: {
@@ -384,7 +356,7 @@ module.exports = {
 };
 ```
 
-- below code at index.css ->
+- index.css ->
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
@@ -447,7 +419,7 @@ yarn add firebase
 yarn add react-firebase-hooks
 ```
 
-_tip - don't forget to add providers on firebase website in authentication section before you start coding for the methods._
+*tip - don't forget to add providers on firebase website in authentication section before you start coding for the methods.*
 
 - ### [sign in with google](https://github.com/CSFrequency/react-firebase-hooks/tree/master/auth#social-login-example)
 
@@ -576,7 +548,7 @@ function RequireAuth({ children }) {
     return <Spinner></Spinner>;
   }
   if (!user) {
-    return <Navigate to="/login" state={{ from: location }} replace />;
+    return <Navigate to="/login" state={{ from: location }} replace/>;
   }
 
   return children;
@@ -1037,7 +1009,6 @@ async function handle() {
 
 ---
 # server
-
 ## express server
 
 ```bash
@@ -1078,6 +1049,20 @@ app.listen(port, () => console.log("listening to port", port));
 
 ---
 
+## heroku install
+
+- [heroku cli download link](https://cli-assets.heroku.com/heroku-x64.exe)
+- install the exe file
+- click next next
+- after installing run the following command on terminal
+
+```bash
+heroku login
+```
+
+- press any key to open browser
+- complete login process
+---
 ## [mongodb quick start](https://www.mongodb.com/docs/drivers/node/current/quick-start/)
 
 - ### [find doc](https://www.mongodb.com/docs/drivers/node/current/usage-examples/findOne/)

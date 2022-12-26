@@ -137,6 +137,7 @@ yarn
 - [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 - install `desktop development with c++`
 - [reference image](https://github.com/sabbir-dcy/os-config/blob/main/Screenshot%202022-11-21%20223152.png)
+![title](/vs_build.png)
 
 ## Install python using anaconda distribution
 

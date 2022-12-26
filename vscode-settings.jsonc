@@ -38,7 +38,7 @@
   
     // terminal -->
     "terminal.integrated.tabs.location": "left",
-    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontFamily": "jetbrains mono",
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorWidth": 2,

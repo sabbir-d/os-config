@@ -17,8 +17,7 @@
 2. open vscode
 3. press ctrl + shift + p
 4. search for `open user settings (json)`
-5. clear all previous code if there is any.
-5. paste to the copied code here and save
+5. paste the copied code here and save
 ```
 
 ## vscode extensions
@@ -48,21 +47,23 @@
 
 ## Install windows terminal
 
-1. download windows terminal from <a href="https://www.microsoft.com/store/apps/9n0dx20hk701" target="_blank">MS store</a>
+1. download windows terminal from <a href="https://www.microsoft.com/store/apps/9n0dx20hk701" target="_blank">MS store</a> on windows 10 (windows 11 have this terminal by default)
 2. to setup git bash in windows terminal follow the steps below :
--  open windows terminal and go to settings
-- click add new profile
-- click new empty profile
-- change the name to **gitbash** or **bash** upon ur like
-- replace the command line url with gitbash url 
->`C:\Program Files\Git\bin\bash.exe` 
-- choose custom icon or use default gitbsh icon from this location
-> `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
-- go startup tab and choose gitbash as default profile
-
+	-  open windows terminal and go to settings
+	- click add new profile
+	- click new empty profile
+	- change the name to **gitbash** or **bash** upon ur like
+	- replace the command line url with gitbash url 
+	>`C:\Program Files\Git\bin\bash.exe` 
+	- choose custom icon or use default gitbsh icon from this location
+	>`C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
+	- go startup tab and choose gitbash as default profile
+---
 ## Install postman
 
 - [postman for desktop](https://dl.pstmn.io/download/latest/win64)
+
+---
 
 ## Install node
 
@@ -88,6 +89,8 @@ npm install -g nodemon
 #or
 yarn global add nodemon
 ```
+
+---
 
 ## Install mongodb(NoSql)
 [mongodb download link](https://repo.mongodb.org/yum/amazon/2/mongodb-org/6.0/x86_64/RPMS/mongodb-org-server-6.0.3-1.amzn2.x86_64.rpm)
@@ -130,14 +133,26 @@ npm create vite@latest
 cd portfolio-react
 yarn
 ```
+
+---
+## environment variable
+- .env file example
+`VITE_keyName=authentication key`
+- using variable
+`import.meta.env.VITE_keyName`
+
+---
+
+## vite build guide
+- [vite official docs](https://vitejs.dev/guide/static-deploy.html)
+---
 # Python for windows
 
 ## install vs build tools
 
 - [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 - install `desktop development with c++`
-- [reference image](https://github.com/sabbir-dcy/os-config/blob/main/Screenshot%202022-11-21%20223152.png)
-![title](/vs_build.png)
+-  ![vs_build](image/vs_build.png)
 
 ## Install python using anaconda distribution
 
@@ -257,17 +272,10 @@ jupyter notebook \
   --NotebookApp.port_retries=0
 ```
 
-\
- &nbsp;
 
 ---
-
 # React devs
-
-## client packages ||
-
-- [install nodejs](#install-node)
-- [create react app](#create-react-app)
+## client packages 
 - [Tailwind and daisyui](#tailwind)
 - [firebase integration](#firebase-integration)
 - [authentication](#authentication)
@@ -280,39 +288,6 @@ jupyter notebook \
 - [Icons](#Icons)
 - [react day picker](#react-day-picker)
 - [image upload](#image-upload)
-
-## server packages ||
-
-- [express server setup](#express-server)
-- [mongodb get started](#mongodb-quick-start)
-- [mongoose get started](#mongoose-quick-start)
-
-\
-&nbsp;
-
----
-
-## install node
-
-- [node download link](https://nodejs.org/dist/v18.12.1/node-v18.12.1-x64.msi)
-
-```bash
-just agree and click next next
-```
-
-## for yarn users install yarn globally
-
-```bash
-npm install --global yarn
-```
-
-## install nodemon globally for backend
-
-```bash
-npm install -g nodemon
-#or
-yarn global add nodemon
-```
 
 ## firebase install
 
@@ -388,6 +363,7 @@ _tip - face webpack error while editing config.js file? restart the client_
 ```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class", //for dark mode
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -422,11 +398,7 @@ body {
 }
 ```
 
-\
- &nbsp;
-
 ---
-
 ## firebase integration
 
 - create firebase/firebase.init.js inside src folder
@@ -437,12 +409,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process.env.REACT_APP_authDomain,
-  projectId: process.env.REACT_APP_projectId,
-  storageBucket: process.env.REACT_APP_storageBucket,
-  messagingSenderId: process.env.REACT_APP_messagingSenderId,
-  appId: process.env.REACT_APP_appId,
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
@@ -454,19 +426,15 @@ export const auth = getAuth(app);
 - copy the code bellow and replace `all dummys` with actual key
 
 ```
-REACT_APP_apiKey=dummyKey
-REACT_APP_authDomain=dummyDomain
-REACT_APP_projectId=dummyId
-REACT_APP_storageBucket=dummyBucket
-REACT_APP_messagingSenderId=dummySenderId
-REACT_APP_appId=dummy
+VITE_apiKey=dummyKey
+VITE_authDomain=dummyDomain
+VITE_projectId=dummyId
+VITE_storageBucket=dummyBucket
+VITE_messagingSenderId=dummySenderId
+VITE_appId=dummy
 ```
 
-\
- &nbsp;
-
 ---
-
 ## [authentication](https://github.com/CSFrequency/react-firebase-hooks/tree/master/auth)
 
 ### [firebase website](https://firebase.google.com/docs?gclid=EAIaIQobChMIx76hsMfu9wIVydeWCh3F8wpZEAAYASABEgJ_IvD_BwE&gclsrc=aw.ds)
@@ -587,11 +555,7 @@ function handleResetPassword(email) {
 }
 ```
 
-\
-&nbsp;
-
 ---
-
 ## [react router dom](https://reactrouter.com/docs/en/v6/getting-started/tutorial)
 
 ```bash
@@ -656,11 +620,6 @@ function CustomLink({ children, to, ...props }) {
 export default CustomLink;
 ```
 
-\
-&nbsp;
-
----
-
 ## [react toastify](https://fkhadra.github.io/react-toastify/installation)
 
 ```bash
@@ -696,10 +655,6 @@ toast("default toast");
 ```
 
 - ### [see more toast options](https://fkhadra.github.io/react-toastify/introduction)
-  \
-  &nbsp;
-
----
 
 ## [hot toast](https://react-hot-toast.com/)
 
@@ -732,11 +687,6 @@ toast("Hello World");
 ```
 
 - ### [see more toast options](https://react-hot-toast.com/)
-
-\
-&nbsp;
-
----
 
 ## [axios](https://axios-http.com/docs/example)
 
@@ -875,11 +825,6 @@ app.patch("/services", (req, res) => {
 });
 ```
 
-\
-&nbsp;
-
----
-
 ## [axios interceptor]()
 
 ```js
@@ -930,11 +875,6 @@ useEffect(() => {
 }, []);
 ```
 
-\
-&nbsp;
-
----
-
 ## [react hook form](https://react-hook-form.com/get-started)
 
 ```bash
@@ -944,11 +884,6 @@ yarn add react-hook-form
 - ### [sample form](https://react-hook-form.com/get-started#Handleerrors)
 
 - ### [form with basic validation](https://codesandbox.io/s/react-hook-form-basic-validation-qdyye)
-
-\
-&nbsp;
-
----
 
 ## [react query](https://react-query.tanstack.com/overview#enough-talk-show-me-some-code-already)
 
@@ -991,11 +926,6 @@ const {isLoading, error, data, refetch } = useQuery(['data', dependency], () => 
 )
 ```
 
-\
-&nbsp;
-
----
-
 ## Icons
 
 - ### [react icons](https://react-icons.github.io/react-icons/)
@@ -1030,14 +960,6 @@ return (
 );
 ```
 
-\
-&nbsp;
-
----
-
-\
-&nbsp;
-
 ---
 
 ## [react day picker](https://react-day-picker.js.org/start)
@@ -1065,12 +987,7 @@ export default function App() {
   );
 }
 ```
-
-\
-&nbsp;
-
 ---
-
 - ### day picker css
   1. create a css file in src folder `daypicker.css`.
   2. import that into App.js `import './daypicker.css' `
@@ -1118,11 +1035,7 @@ async function handle() {
 }
 ```
 
-\
-&nbsp;
-
 ---
-
 # server
 
 ## express server
@@ -1162,9 +1075,6 @@ app.get("/", (req, res) => {
 
 app.listen(port, () => console.log("listening to port", port));
 ```
-
-\
-&nbsp;
 
 ---
 

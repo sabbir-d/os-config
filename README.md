@@ -1,7 +1,37 @@
-- [vscode](##INSTALL-VSCODE)
-- [git](##INSTALL-GIT-BASH)
-- [mern stack](##INSTALL-POSTMAN)
-- [python devs](#PYTHON-FOR-WINDOWS-USER)
+
+
+## WINDWOS ACTIVATE
+- run powershell(as adminstrattor)
+- copy-paste the below commands and press enter one by one
+
+```bash
+slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+```
+```bash
+slmgr.vbs /skms kms.teevee.asia
+```
+```bash
+slmgr.vbs /ato
+```
+- `note - ` click ok if anything pops up in explorer
+- to check if the windows get activated serach `activation sertting` in windows search menu
+
+## INSTALL CHROME WITHOUT MS EDGE
+- run cmd(as adminstrattor)
+- type `winget` and enter
+- if it shows the error as show in the picture go to ms-store and search for `app installer` and update it. Then, close and re-open cmd(as adminstrator)
+![winget-error](image/winget-not-recognized.webp)
+- now typing `winget` and pressing enter will show description related to winget
+- now enter the below commands
+```bash
+winget install Google.Chrome
+```
+- press Y and enter if it ask any permission
+
+## OTHER ESSENTIAL APPS
+- [download winrar](https://www.win-rar.com/postdownload.html?&L=0)
+- [donwload discord](https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86)
+
 ## INSTALL VSCODE
 
 [vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)
@@ -147,7 +177,7 @@ yarn or npm install
 ### *install vs build tools*
 [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 - install `desktop development with c++`
--  ![vs_build](image/vs_build.png)
+- ![vs_build](image/vs_build.png)
 
 ### *install python using anaconda distribution*
 

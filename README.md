@@ -50,18 +50,18 @@ winget install Google.Chrome
 
 ### *vscode extensions*
 
-- better comments
-- es7+react/redux native snippets
-- react extension pack by rajbir
-- tailwindcss intellisnense
-- markdown all in one
-- auto rename tag
-- material icon theme
-- prettier code formatter
-- live server (for vanila html, css, js project)
-- live share (for sharing code)
-- code runner (for c++ or python)
-- fluent icons (minimul interface icons)
+✅ better comments\
+✅ es7+react/redux native snippets\
+✅ react extension pack by rajbir\
+✅ tailwindcss intellisnense\
+✅ markdown all in one\
+✅ auto rename tag\
+✅ material icon theme\
+✅ prettier code formatter\
+✅ live server (for vanila html, css, js project)\
+✅ live share (for sharing code)\
+✅ code runner (for c++ or python)\
+✅ fluent icons (minimul interface icons)
 
 ## CODING FONT
 

@@ -300,7 +300,8 @@ jupyter notebook \
 ---
 # React devs
 ## client packages 
-- [Tailwind and daisyui](#tailwind)
+- [Firebase](#firebase-install)
+- [Tailwind](#tailwind)
 - [firebase integration](#firebase-integration)
 - [authentication](#authentication)
 - [react router dom](#react-router-dom)
@@ -333,7 +334,7 @@ firebase login --reauth
 firebase use --add
 ```
 
-## [tailwind](https://tailwindcss.com/docs/guides/create-react-app)+[Daisy ui](https://daisyui.com/docs/install/)
+## [tailwind](https://tailwindcss.com/docs/guides/create-react-app)
 
 ```bash
 yarn add -D tailwindcss postcss autoprefixer
@@ -355,6 +356,8 @@ module.exports = {
   plugins: [],
 };
 ```
+
+[daisy ui](https://daisyui.com/docs/install/)
 
 - modification with daisy Ui
 ```bash

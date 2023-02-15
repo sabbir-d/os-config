@@ -121,7 +121,7 @@ yarn global add nodemon
 ---
 
 ## INSTALL MONGODB(NoSql)
-[mongodb download link](https://repo.mongodb.org/yum/amazon/2/mongodb-org/6.0/x86_64/RPMS/mongodb-org-server-6.0.3-1.amzn2.x86_64.rpm)
+[mongodb download link](https://www.mongodb.com/try/download/community)
 
 ```bash
 click install, just agree and choose complete installation

@@ -33,13 +33,13 @@ winget install Google.Chrome
 
 - press Y and enter if it ask any permission
 
-## OTHER ESSENTIAL APPS
+## DOWNLOAD OTHER ESSENTIAL APPS
 
-- [download winrar](https://www.win-rar.com/postdownload.html?&L=0)
-- [donwload discord](https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86)
-- [donload slack](https://slack.com/api/desktop.latestRelease?arch=ia32&variant=exe&redirect=true)
-- [download vlc](https://get.videolan.org/vlc/3.0.18/win32/vlc-3.0.18-win32.exe)
-- [download soundfx](https://download.fxsound.com/fxsoundlatest)
+- [winrar](https://www.win-rar.com/postdownload.html?&L=0)
+- [discord](https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86)
+- [slack](https://slack.com/api/desktop.latestRelease?arch=ia32&variant=exe&redirect=true)
+- [vlc](https://get.videolan.org/vlc/3.0.18/win32/vlc-3.0.18-win32.exe)
+- [soundfx](https://download.fxsound.com/fxsoundlatest)
 - [spotify](https://spotify.link/lz04YJ0r9ib?label=sp_cid%3A14d78980-ce9f-4b86-b84d-bffd0781450d)
 - [malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou)
 - [obs](https://cdn-fastly.obsproject.com/downloads/OBS-Studio-29.0.2-Full-Installer-x64.exe)

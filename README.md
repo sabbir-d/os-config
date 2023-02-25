@@ -1,42 +1,58 @@
-
-
 ## WINDWOS ACTIVATE
+
 - run powershell(as adminstrattor)
 - copy-paste the below commands and press enter one by one
 
 ```bash
 slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 ```
+
 ```bash
 slmgr.vbs /skms kms.teevee.asia
 ```
+
 ```bash
 slmgr.vbs /ato
 ```
+
 - `note - ` click ok if anything pops up in explorer
 - to check if the windows get activated serach `activation sertting` in windows search menu
 
 ## INSTALL CHROME WITHOUT MS EDGE
+
 - run cmd(as adminstrattor)
 - type `winget` and enter
 - if it shows the error as show in the picture go to ms-store and search for `app installer` and update it. Then, close and re-open cmd(as adminstrator)
-![winget-error](image/winget-not-recognized.webp)
+  ![winget-error](image/winget-not-recognized.webp)
 - now typing `winget` and pressing enter will show description related to winget
 - now enter the below commands
+
 ```bash
 winget install Google.Chrome
 ```
+
 - press Y and enter if it ask any permission
 
 ## OTHER ESSENTIAL APPS
+
 - [download winrar](https://www.win-rar.com/postdownload.html?&L=0)
 - [donwload discord](https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86)
+- [donload slack](https://slack.com/api/desktop.latestRelease?arch=ia32&variant=exe&redirect=true)
+- [download vlc](https://get.videolan.org/vlc/3.0.18/win32/vlc-3.0.18-win32.exe)
+- [download soundfx](https://download.fxsound.com/fxsoundlatest)
+- [spotify](https://spotify.link/lz04YJ0r9ib?label=sp_cid%3A14d78980-ce9f-4b86-b84d-bffd0781450d)
+- [malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou)
+- [obs](https://cdn-fastly.obsproject.com/downloads/OBS-Studio-29.0.2-Full-Installer-x64.exe)
+- [steam](https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe)
+- [epic](https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi)
+- [figma](https://www.figma.com/download/desktop/win)
+
 
 ## INSTALL VSCODE
 
 [vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)
 
-### *customize vscode*
+### _customize vscode_
 
 [customized jsonc link](https://github.com/sabbir-dcy/os-config/blob/main/vscode-settings.jsonc)
 
@@ -48,7 +64,7 @@ winget install Google.Chrome
 - paste the copied code here and save
 ```
 
-### *vscode extensions*
+### _vscode extensions_
 
 ✅ better comments\
 ✅ es7+react/redux native snippets\
@@ -70,6 +86,7 @@ winget install Google.Chrome
 ## INSTALL GIT BASH
 
 download gitbash from [official website](https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe)
+
 - install git bash keeping all the settings to default
 - click next next
 
@@ -77,16 +94,18 @@ download gitbash from [official website](https://github.com/git-for-windows/git/
 
 1. download windows terminal from <a href="https://www.microsoft.com/store/apps/9n0dx20hk701" target="_blank">MS store</a> on windows 10 (windows 11 have this terminal by default)
 2. to setup git bash in windows terminal follow the steps below :
-	-  open windows terminal and go to settings
-	- click add new profile
-	- click new empty profile
-	- change the name to **gitbash** or **bash** upon ur like
-	- replace the command line url with gitbash url 
-	>`C:\Program Files\Git\bin\bash.exe` 
-	- choose custom icon or use default gitbsh icon from this location
-	>`C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
-	- go startup tab and choose gitbash as default profile
+   - open windows terminal and go to settings
+   - click add new profile
+   - click new empty profile
+   - change the name to **gitbash** or **bash** upon ur like
+   - replace the command line url with gitbash url
+     > `C:\Program Files\Git\bin\bash.exe`
+   - choose custom icon or use default gitbsh icon from this location
+     > `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
+   - go startup tab and choose gitbash as default profile
+
 ---
+
 ## INSTALL POSTMAN
 
 [postman for desktop](https://dl.pstmn.io/download/latest/win64)
@@ -96,20 +115,23 @@ download gitbash from [official website](https://github.com/git-for-windows/git/
 ## INSTALL NODE
 
 [node download link](https://nodejs.org/en/download)
+
 - download LTS version for windows x64 .msi installer
 
 ```bash
 just agree and click next next
 ```
 
-### *for yarn users install yarn globally*
+### _for yarn users install yarn globally_
+
 - although node comes with built in npm package manager if u wish u can use yarn as package manager by installing yarn globally
 
 ```bash
 npm install --global yarn
 ```
 
-### *install nodemon globally for backend*
+### _install nodemon globally for backend_
+
 - for realtime load of backend server
 
 ```bash
@@ -121,6 +143,7 @@ yarn global add nodemon
 ---
 
 ## INSTALL MONGODB(NoSql)
+
 [mongodb download link](https://www.mongodb.com/try/download/community)
 
 ```bash
@@ -130,31 +153,38 @@ click install, just agree and choose complete installation
 - it will automatically download and install monogo compass(data base ui) which will take few extra minutes.
 
 [mongodb shell download](https://downloads.mongodb.com/compass/mongodb-mongosh_1.6.1_amd64.deb?_ga=2.66967086.1814885739.1671987424-986248264.1671987424)
+
 - mongo shell (interactive JavaScript interface to MongoDB) which will allow us to iterect with database using command line
 - unzip the file and rename it something like **mongosh**
 - move this mongosh folder to this location
-> `C:\Program Files`
+  > `C:\Program Files`
 - now press start button and type **environment variables**
-- open ***edit environment variable*** inside **advance** tab at the bottom open **enviroment variables**
+- open **_edit environment variable_** inside **advance** tab at the bottom open **enviroment variables**
 - in **system variables** select **path** and click **edit**
 - click new and paste this location url
->`C:\Program Files\mongosh\bin`
+  > `C:\Program Files\mongosh\bin`
 - click ok and get out of there
 - now open a new terminal and type **mongosh** and press enter
 - you should see mongosh log id, connection and other information
+
 ---
+
 ## REACT WEB DEV
-### *create react application using vite*
-- open windows terminal and run the  command bellow
+
+### _create react application using vite_
+
+- open windows terminal and run the command bellow
+
 ```bash
 yarn create vite
 or
 npm create vite@latest
 ```
+
 - type project name. eg -> portfolio-react
 - press enter and choose **react** from the option using arrow key
 - press enter and choose the language u prefer **javascript** or **typescript**
-> **swc** one for rust based web bundler
+  > **swc** one for rust based web bundler
 - and run the commands bellow
 
 ```bash
@@ -162,30 +192,35 @@ cd portfolio-react
 yarn or npm install
 ```
 
-### *environment variable*
-- .env file example
-`VITE_keyName=authentication key`
-- using variable
-`import.meta.env.VITE_keyName`
+### _environment variable_
 
-### *vite build guide*
+- .env file example
+  `VITE_keyName=authentication key`
+- using variable
+  `import.meta.env.VITE_keyName`
+
+### _vite build guide_
+
 [vite official docs](https://vitejs.dev/guide/static-deploy.html)
 
 ---
+
 ## PYTHON FOR WINDOWS USER
 
-### *install vs build tools*
+### _install vs build tools_
+
 [download vs build tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+
 - install `desktop development with c++`
 - ![vs_build](image/vs_build.png)
 
-### *install python using anaconda distribution*
+### _install python using anaconda distribution_
 
 - download conda from [official website](https://repo.anaconda.com/archive/Anaconda3-2022.10-Windows-x86_64.exe)
 - click next next untill `advance installation option`
 - check both of the options
 
-### *run jupyter notebook on browser*
+### _run jupyter notebook on browser_
 
 - open terminal and run the commands below
 
@@ -193,7 +228,7 @@ yarn or npm install
 jupyter notebook
 ```
 
-### *Colab local server*
+### _Colab local server_
 
 > how to use jupyter notebook as colab local runtime?
 
@@ -208,8 +243,8 @@ jupyter notebook --NotebookApp.allow_origin="https://colab.research.google.com" 
 ```
 
 2. now the token URL (_local host one_) generated in terminal: ![reference image](https://robotwealth.com/wp-content/uploads/2020/11/jupyter-local.png)
-3. In Colab, click the `Connect` button and select `Connect to local runtime`. Enter the token URL you just copied and click `Connect`: 
-![reference image](https://robotwealth.com/wp-content/uploads/2020/11/colab-connect-local.png)
+3. In Colab, click the `Connect` button and select `Connect to local runtime`. Enter the token URL you just copied and click `Connect`:
+   ![reference image](https://robotwealth.com/wp-content/uploads/2020/11/colab-connect-local.png)
 
 ## PYTHON (for ubuntu)
 
@@ -296,10 +331,12 @@ jupyter notebook \
   --NotebookApp.port_retries=0
 ```
 
-
 ---
+
 # React devs
-## client packages 
+
+## client packages
+
 - [Firebase](#firebase-install)
 - [Tailwind](#tailwind)
 - [firebase integration](#firebase-integration)
@@ -360,6 +397,7 @@ module.exports = {
 [daisy ui](https://daisyui.com/docs/install/)
 
 - modification with daisy Ui
+
 ```bash
 yarn add daisyui
 ```
@@ -375,7 +413,7 @@ module.exports = {
       colors: {
         primary: "#0080ff",
       },
-      fontFamily: {}
+      fontFamily: {},
     },
   },
   daisyui: {
@@ -404,6 +442,7 @@ body {
 ```
 
 ---
+
 ## firebase integration
 
 - create firebase/firebase.init.js inside src folder
@@ -440,6 +479,7 @@ VITE_appId=dummy
 ```
 
 ---
+
 ## [authentication](https://github.com/CSFrequency/react-firebase-hooks/tree/master/auth)
 
 ### [firebase website](https://firebase.google.com/docs?gclid=EAIaIQobChMIx76hsMfu9wIVydeWCh3F8wpZEAAYASABEgJ_IvD_BwE&gclsrc=aw.ds)
@@ -452,7 +492,7 @@ yarn add firebase
 yarn add react-firebase-hooks
 ```
 
-*tip - don't forget to add providers on firebase website in authentication section before you start coding for the methods.*
+_tip - don't forget to add providers on firebase website in authentication section before you start coding for the methods._
 
 - ### [sign in with google](https://github.com/CSFrequency/react-firebase-hooks/tree/master/auth#social-login-example)
 
@@ -561,6 +601,7 @@ function handleResetPassword(email) {
 ```
 
 ---
+
 ## [react router dom](https://reactrouter.com/docs/en/v6/getting-started/tutorial)
 
 ```bash
@@ -581,7 +622,7 @@ function RequireAuth({ children }) {
     return <Spinner></Spinner>;
   }
   if (!user) {
-    return <Navigate to="/login" state={{ from: location }} replace/>;
+    return <Navigate to="/login" state={{ from: location }} replace />;
   }
 
   return children;
@@ -992,7 +1033,9 @@ export default function App() {
   );
 }
 ```
+
 ---
+
 - ### day picker css
   1. create a css file in src folder `daypicker.css`.
   2. import that into App.js `import './daypicker.css' `
@@ -1041,7 +1084,9 @@ async function handle() {
 ```
 
 ---
+
 # server
+
 ## express server
 
 ```bash
@@ -1095,7 +1140,9 @@ heroku login
 
 - press any key to open browser
 - complete login process
+
 ---
+
 ## [mongodb quick start](https://www.mongodb.com/docs/drivers/node/current/quick-start/)
 
 - ### [find doc](https://www.mongodb.com/docs/drivers/node/current/usage-examples/findOne/)

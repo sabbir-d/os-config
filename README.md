@@ -77,7 +77,8 @@ winget install Google.Chrome
 ✅ live server (for vanila html, css, js project)\
 ✅ live share (for sharing code)\
 ✅ code runner (for c++ or python)\
-✅ fluent icons (minimul interface icons)
+✅ fluent icons (minimul interface icons)\
+✅ quokka.js (inline code runner)
 
 ## CODING FONT
 

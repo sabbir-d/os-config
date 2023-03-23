@@ -1,83 +1,99 @@
 {
-    "window.menuBarVisibility": "compact",
-  
-    // editor -->
-    "editor.fontFamily": "jetbrains mono, fira code, roboto mono, monospace",
-    "editor.fontSize": 16,
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "400",
-    "editor.cursorWidth": 3,
-    "editor.cursorStyle": "line",
-    "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": false,
-    // "editor.cursorSurroundingLines": 8,
-    
-    "editor.smoothScrolling": true,
-    "editor.mouseWheelScrollSensitivity": 2,
-  
-    "editor.minimap.enabled": false,
-    "editor.wordWrap": "on",
-    "editor.tabCompletion": "on", // auto completion with 'tab' instead of 'enter'
-    "editor.formatOnSave": true,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": "esbenp.prettier-vscode", //extension
-    "editor.parameterHints.enabled": false,
-    "editor.hover.above": false,
-    "editor.renderWhitespace": "boundary",
-    
-    // set default formatter specifically
-    "[html]": {
-      "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
+  "window.menuBarVisibility": "compact",
 
-  
-    // terminal -->
-    "terminal.integrated.tabs.location": "left",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.fontFamily": "jetbrains mono",
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorWidth": 2,
-    "terminal.integrated.cursorBlinking": true,
-    "debug.console.fontFamily": "consolas",
-    "debug.console.fontSize": 20,
-  
-    // inegretd terminal switch to terminal from powershell -->
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.profiles.windows": {
-      "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
-        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-        "args": []
-      }
-    },
-  
-    //* other -->
-    "files.defaultLanguage": "javascript",
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1050,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "zenMode.fullScreen": false,
-    "better-comments.multilineComments": true,
-    "tailwindCSS.emmetCompletions": true,
-    "breadcrumbs.symbolPath": "off",
-    "explorer.compactFolders": false, // expands folder structre even for the single file
-  
-    // react -->
-    "emmet.includeLanguages": {
-      "javascript": "javascriptreact" // inclued html emmet to js file
-    },
+  // <-- editor -->
+  "editor.fontFamily": "jetbrains mono,monospace",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "500",
+  "editor.cursorWidth": 3,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "off",
+  // "editor.cursorSurroundingLines": 8,
 
-    "workbench.startupEditor": "none",
-    "workbench.colorCustomizations": {
-/*    "editorIndentGuide.activeBackground": "#b9b9b9",
-      "statusBar.background": "#222225",
-      "statusBar.noFolderBackground": "#222225",
-      "statusBar.debuggingBackground": "#511f1f" */
-      "editorWhitespace.foreground": "#606b8d"
-    },
-    "material-icon-theme.folders.color": "#b342f5", // color font the folder that does not have any icon built in
-  }
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelScrollSensitivity": 2,
+
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.tabCompletion": "on", // auto completion with 'tab' instead of 'enter'
+  "editor.formatOnSave": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode", //extension
+  "editor.parameterHints.enabled": false,
+  "editor.hover.above": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.lineNumbers": "off",
+  "editor.glyphMargin": false,
+  // "editor.folding": false,
+  // "editor.renderWhitespace": "boundary",
+
+  // set default formatter specifically
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  // <-- terminal -->
+  "terminal.integrated.tabs.location": "left",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "jetbrains mono",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.cursorBlinking": true,
+  "debug.console.fontFamily": "consolas",
+  "debug.console.fontSize": 20,
+
+  // inegretd terminal switch to terminal from powershell -->
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": []
+    }
+  },
+
+  //* <-- other -->
+  "files.defaultLanguage": "javascript",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1050,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "zenMode.fullScreen": false,
+  "better-comments.multilineComments": true,
+  "tailwindCSS.emmetCompletions": true,
+  "breadcrumbs.symbolPath": "off",
+  "explorer.compactFolders": false, // expands folder structre even for the single file
+
+  // react -->
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact" // inclued html emmet to js file
+  },
+
+  // <-- workbench -->
+  "workbench.startupEditor": "none",
+  // "workbench.activityBar.visible": false,
+  "workbench.colorCustomizations": {
+    /*    
+    "editorIndentGuide.activeBackground": "#b9b9b9",
+    "statusBar.background": "#222225",
+    "statusBar.noFolderBackground": "#222225",
+    "statusBar.debuggingBackground": "#511f1f"
+    "editorWhitespace.foreground": "#606b8d"
+    */
+  },
+  "material-icon-theme.folders.color": "#b342f5",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "notebook.lineNumbers": "on",
+  "notebook.markup.fontSize": 17,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "notebook.editorOptionsCustomizations": {},
+  "workbench.colorTheme": "Cobalt3"
+}

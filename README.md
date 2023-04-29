@@ -1,6 +1,21 @@
+## INSTALL CHROME WITHOUT MS EDGE
+
+- run cmd(as adminstrattor)
+- type `winget` and enter
+- if it shows the error as show in the picture go to ms-store and search for `app installer` and update it. Then, close and re-open cmd(as adminstrator)
+  ![winget-error](image/winget-not-recognized.webp)
+- now typing `winget` and pressing enter will show description related to winget
+- now enter the below commands
+
+```bash
+winget install Google.Chrome
+```
+
+- press Y and enter if it ask any permission
+
 ## WINDWOS ACTIVATE
 
-- run powershell(as adminstrattor)
+- run windows terminal(as adminstrator) or powershell(as adminstrator)
 - copy-paste the below commands and press enter one by one
 
 ```bash
@@ -17,21 +32,7 @@ slmgr.vbs /ato
 
 - `note - ` click ok if anything pops up in explorer
 - to check if the windows get activated serach `activation sertting` in windows search menu
-
-## INSTALL CHROME WITHOUT MS EDGE
-
-- run cmd(as adminstrattor)
-- type `winget` and enter
-- if it shows the error as show in the picture go to ms-store and search for `app installer` and update it. Then, close and re-open cmd(as adminstrator)
-  ![winget-error](image/winget-not-recognized.webp)
-- now typing `winget` and pressing enter will show description related to winget
-- now enter the below commands
-
-```bash
-winget install Google.Chrome
-```
-
-- press Y and enter if it ask any permission
+- activating windows using thirdparty methods sometimes causes virus. Make sure to scan the pc with [malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou).
 
 ## DOWNLOAD OTHER ESSENTIAL APPS
 
@@ -41,12 +42,10 @@ winget install Google.Chrome
 - [vlc](https://get.videolan.org/vlc/3.0.18/win32/vlc-3.0.18-win32.exe)
 - [soundfx](https://download.fxsound.com/fxsoundlatest)
 - [spotify](https://spotify.link/lz04YJ0r9ib?label=sp_cid%3A14d78980-ce9f-4b86-b84d-bffd0781450d)
-- [malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou)
 - [obs](https://cdn-fastly.obsproject.com/downloads/OBS-Studio-29.0.2-Full-Installer-x64.exe)
 - [steam](https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe)
 - [epic](https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi)
 - [figma](https://www.figma.com/download/desktop/win)
-
 
 ## INSTALL VSCODE
 
@@ -68,9 +67,8 @@ winget install Google.Chrome
 
 ✅ better comments\
 ✅ es7+react/redux native snippets\
-✅ react extension pack by rajbir\
 ✅ tailwindcss intellisnense\
-✅ markdown all in one\
+✅ markdown Preview Github Styling\
 ✅ auto rename tag\
 ✅ material icon theme\
 ✅ prettier code formatter\
@@ -104,6 +102,36 @@ download gitbash from [official website](https://github.com/git-for-windows/git/
    - choose custom icon or use default gitbsh icon from this location
      > `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
    - go startup tab and choose gitbash as default profile
+
+## github connection
+
+### device config
+
+- open gitbash terminal and write the following commands
+
+```
+  git config --global user.email "johndoe@example.com"
+```
+
+```
+  git config --global user.name "John Doe"
+```
+
+### ssh key gen
+
+- use the command below in terminal
+
+```
+  ssh-keygen -t ed25519-sk -C YOUR_EMAIL
+```
+
+- go to this location `C:\Users\[username]\.ssh` and open the folder in vscode
+- open `id_ed25519.pub` and copy the full ssh key
+- [go to this link](https://github.com/settings/keys)
+- click on New SSH key
+- give any title
+- paste the copied key at key field
+- press Add SSH key
 
 ---
 

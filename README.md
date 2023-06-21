@@ -110,11 +110,11 @@ download gitbash from [official website](https://github.com/git-for-windows/git/
 - open gitbash terminal and write the following commands
 
 ```
-  git config --global user.email "johndoe@example.com"
+git config --global user.email "johndoe@example.com"
 ```
 
 ```
-  git config --global user.name "John Doe"
+git config --global user.name "John Doe"
 ```
 
 ### ssh key gen
@@ -122,7 +122,7 @@ download gitbash from [official website](https://github.com/git-for-windows/git/
 - use the command below in terminal
 
 ```
-  ssh-keygen -t ed25519-sk -C YOUR_EMAIL
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 - go to this location `C:\Users\[username]\.ssh` and open the folder in vscode

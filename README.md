@@ -81,6 +81,7 @@ slmgr.vbs /ato
 ## CODING FONT
 
 [jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)
+[fira code](https://fonts.google.com/specimen/Fira+Code)
 
 ## INSTALL GIT BASH
 

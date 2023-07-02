@@ -1,18 +1,3 @@
-## INSTALL CHROME WITHOUT MS EDGE
-
-- run cmd(as adminstrattor)
-- type `winget` and enter
-- if it shows the error as show in the picture go to ms-store and search for `app installer` and update it. Then, close and re-open cmd(as adminstrator)
-  ![winget-error](image/winget-not-recognized.webp)
-- now typing `winget` and pressing enter will show description related to winget
-- now enter the below commands
-
-```bash
-winget install Google.Chrome
-```
-
-- press Y and enter if it ask any permission
-
 ## WINDWOS ACTIVATE
 
 - run windows terminal(as adminstrator) or powershell(as adminstrator)
@@ -34,10 +19,19 @@ slmgr.vbs /ato
 - to check if the windows get activated serach `activation sertting` in windows search menu
 - activating windows using thirdparty methods sometimes causes virus. Make sure to scan the pc with [malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou).
 
+
+## DRIVERS
+
+- [nvidia](https://www.nvidia.com/en-us/geforce/drivers/)\
+- [amd](https://www.amd.com/en/support)\
+- for **realtek** audio visit motherboard manufacturer website
+
+
 ## DOWNLOAD OTHER ESSENTIAL APPS
 
 - [winrar](https://www.win-rar.com/postdownload.html?&L=0)
 - [discord](https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86)
+- [afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
 - [slack](https://slack.com/api/desktop.latestRelease?arch=ia32&variant=exe&redirect=true)
 - [vlc](https://get.videolan.org/vlc/3.0.18/win32/vlc-3.0.18-win32.exe)
 - [soundfx](https://download.fxsound.com/fxsoundlatest)
@@ -80,7 +74,7 @@ slmgr.vbs /ato
 
 ## CODING FONT
 
-[jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)
+[jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)\
 [fira code](https://fonts.google.com/specimen/Fira+Code)
 
 ## INSTALL GIT BASH

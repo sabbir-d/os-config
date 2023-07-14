@@ -1,3 +1,5 @@
+![](https://doodleipsum.com/400x300?i=819029efebc614651580c85d4e5134a2)
+
 ## WINDWOS ACTIVATE
 
 - run windows terminal(as adminstrator) or powershell(as adminstrator)
@@ -19,13 +21,11 @@ slmgr.vbs /ato
 - to check if the windows get activated serach `activation sertting` in windows search menu
 - activating windows using thirdparty methods sometimes causes virus. Make sure to scan the pc with [malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou).
 
-
 ## DRIVERS
 
-- [nvidia](https://www.nvidia.com/en-us/geforce/drivers/)\
-- [amd](https://www.amd.com/en/support)\
+- [nvidia](https://www.nvidia.com/en-us/geforce/drivers/)
+- [amd](https://www.amd.com/en/support)
 - for **realtek** audio visit motherboard manufacturer website
-
 
 ## DOWNLOAD OTHER ESSENTIAL APPS
 
@@ -41,94 +41,12 @@ slmgr.vbs /ato
 - [epic](https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi)
 - [figma](https://www.figma.com/download/desktop/win)
 
-## INSTALL VSCODE
-
-[vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)
-
-### _customize vscode_
-
-[customized jsonc link](https://github.com/sabbir-dcy/os-config/blob/main/vscode-settings.jsonc)
-
-```
-- copy full json code from the link above
-- open vscode
-- press ctrl + shift + p
-- search for `open user settings (json)`
-- paste the copied code here and save
-```
-
-### _vscode extensions_
-
-✅ better comments\
-✅ es7+react/redux native snippets\
-✅ tailwindcss intellisnense\
-✅ markdown Preview Github Styling\
-✅ auto rename tag\
-✅ material icon theme\
-✅ prettier code formatter\
-✅ live server (for vanila html, css, js project)\
-✅ live share (for sharing code)\
-✅ code runner (for c++ or python)\
-✅ fluent icons (minimul interface icons)\
-✅ quokka.js (inline code runner)
 
 ## CODING FONT
 
 [jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)\
 [fira code](https://fonts.google.com/specimen/Fira+Code)
 
-## INSTALL GIT BASH
-
-download gitbash from [official website](https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe)
-
-- install git bash keeping all the settings to default
-- click next next
-
-## INSTALL WINDOWS TERMINAL
-
-1. download windows terminal from <a href="https://www.microsoft.com/store/apps/9n0dx20hk701" target="_blank">MS store</a> on windows 10 (windows 11 have this terminal by default)
-2. to setup git bash in windows terminal follow the steps below :
-   - open windows terminal and go to settings
-   - click add new profile
-   - click new empty profile
-   - change the name to **gitbash** or **bash** upon ur like
-   - replace the command line url with gitbash url
-     > `C:\Program Files\Git\bin\bash.exe`
-   - choose custom icon or use default gitbsh icon from this location
-     > `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
-   - go startup tab and choose gitbash as default profile
-
-## github connection
-
-### device config
-
-- open gitbash terminal and write the following commands
-
-```
-git config --global user.email "johndoe@example.com"
-```
-
-```
-git config --global user.name "John Doe"
-```
-
-### ssh key gen
-
-- use the command below in terminal
-
-```
-ssh-keygen -t ed25519 -C "your_email@example.com"
-```
-
-- go to this location `C:\Users\[username]\.ssh` and open the folder in vscode
-- open `id_ed25519.pub` and copy the full ssh key
-- [go to this link](https://github.com/settings/keys)
-- click on New SSH key
-- give any title
-- paste the copied key at key field
-- press Add SSH key
-
----
 
 ## INSTALL POSTMAN
 

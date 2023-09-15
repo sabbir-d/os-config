@@ -241,12 +241,11 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 
 ```json
 {
-  "window.menuBarVisibility": "compact",
   "breadcrumbs.enabled": false,
 
   // <-- editor -->
   "editor.fontFamily": "cascadia code, jetbrains mono, monospace",
-  "editor.fontSize": 17,
+  "editor.fontSize": 14.5,
   "editor.fontLigatures": "'calt', 'ss01'",
   "editor.fontWeight": "400",
   "editor.cursorWidth": 3,
@@ -262,8 +261,7 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "editor.formatOnSave": true,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.tabSize": 2,
-  "editor.defaultFormatter": "esbenp.prettier-vscode", //extension
+  "editor.tabSize": 2, //extension
   "editor.parameterHints.enabled": false,
   "editor.hover.above": false,
   "editor.guides.bracketPairs": "active",
@@ -272,26 +270,30 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   // "editor.folding": false,
   // "editor.renderWhitespace": "boundary",
 
-  // set default formatter specifically
+  //** set default formatter specifically
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    // "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascriptreact]": {
     // "editor.defaultFormatter": "vscode.typescript-language-features"
   },
 
-  // <-- terminal -->
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+
+  //** <-- terminal -->
   "terminal.integrated.tabs.location": "left",
-  "terminal.integrated.fontSize": 17,
-  "terminal.integrated.fontFamily": "cascadia code",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "caskaydiacove nerd font",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.cursorBlinking": true,
   "debug.console.fontFamily": "consolas",
   "debug.console.fontSize": 20,
 
-  // inegretd terminal switch to terminal from powershell -->
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  //** inegretd terminal switch to terminal from powershell -->
+  "terminal.integrated.defaultProfile.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)",
   "terminal.integrated.profiles.windows": {
     "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
       "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -299,18 +301,16 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
     }
   },
 
-  //* <-- other -->
+  //** <-- other -->
   "files.defaultLanguage": "javascript",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1050,
-  "liveServer.settings.donotShowInfoMsg": true,
   "zenMode.fullScreen": false,
-  "better-comments.multilineComments": true,
   "tailwindCSS.emmetCompletions": true,
   "breadcrumbs.symbolPath": "off",
   "explorer.compactFolders": false, // expands folder structre even for the single file
 
-  // emmet in specific language -->
+  //** react -->
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "vue-html": "html",
@@ -319,22 +319,41 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
     // inclued html emmet to js file
   },
 
-  // <-- workbench -->
+  //** <-- workbench -->
   "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {
     /*    
     "editorIndentGuide.activeBackground": "#b9b9b9",
     "statusBar.background": "#222225",
+    "statusBar.noFolderBackground": "#222225",
+    "statusBar.debuggingBackground": "#511f1f"
+    "editorWhitespace.foreground": "#606b8d"
     */
   },
-  "material-icon-theme.folders.color": "#b342f5",
-
+  "workbench.productIconTheme": "fluent-icons",
+  "notebook.lineNumbers": "on",
+  "notebook.markup.fontSize": 17,
   "[python]": {
     "editor.formatOnType": true
   },
-
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.menuBarVisibility": "compact",
+  "window.zoomLevel": 1,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // all c/c++ config
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "code-runner.runInTerminal": true,
+  "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe"
 }
+
 
 
 ```

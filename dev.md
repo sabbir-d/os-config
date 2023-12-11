@@ -30,10 +30,14 @@ download gitbash from [official website](https://github.com/git-for-windows/git/
      > `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
    - go startup tab and choose gitbash as default profile
 
-**SSH key gen**
+**connect github with your system using SSH key**
 
 ```
-ssh-keygen -t ed25519-sk -C "YOUR_EMAIL"
+ssh-keygen -t ed25519-sk -C YOUR_EMAIL
+```
+> if your system shows error on above command, use below command instead
+```
+ssh-keygen -t rsa -b 4096 -C YOUR_EMAIL
 ```
 
 use the command above in terminal. go to `C:\Users\[username]\.ssh` this location and open the folder in an editor. open `id_ed25519.pub` and copy the full ssh key. go to this [link](https://github.com/settings/keys) click on `new ssh key`. give a title and paste the copied key at key field. now github should recognize your device.
@@ -41,52 +45,52 @@ use the command above in terminal. go to `C:\Users\[username]\.ssh` this locatio
 **User login**
 open terminal and follow the command below
 ```
-git config --global user.email "YOUR_EMAIL"
-git config --global user.name "YOUR_USERNAME"
+git config --global user.email YOUR_EMAIL
+git config --global user.name YOUR_USERNAME
 ```
 
 **Basic commands**
 
-`git clone url`
-`git remote set-url origin url`
-`git remote -v`
-`git status`
-`git add .`
-`git commit -m 'cloned commit'`
+`git clone url`\
+`git remote set-url origin url`\
+`git remote -v`\
+`git status`\
+`git add .`\
+`git commit -m 'cloned commit'`\
 `git push -u origin main`
 
 **Clone repo with commits**
 
-`git clone --bare <original-url>`
-`git push --mirror <new-url>`
-`git remote -v`
+`git clone --bare <original-url>`\
+`git push --mirror <new-url>`\
+`git remote -v`\
 `get remote set-url origin <new-url>`
 
 **Clone remote branch**
 
-`git clone <your-repo-url>`
-`cd my-cloned-project-folder`
-`git branch -a`
+`git clone <your-repo-url>`\
+`cd my-cloned-project-folder`\
+`git branch -a`\
 `git checkout <branch-name>`
 
 **Set remote to, already created remote repo with readme file**
 
-`git branch -M main`
-`git remote add <origin-url>`
-`git pull origin main`
-`add .`
-`commit -m ‘first commit’`
+`git branch -M main`\
+`git remote add <origin-url>`\
+`git pull origin main`\
+`add .`\
+`commit -m ‘first commit’`\
 `git push -u origin main`
 
 **Git another branch is pushing conflict (tags-fast forward, git pull)**
 
-`git checkout master`
+`git checkout master`\
 `git pull origin`
 
 **Delete git local branch**
 
-`git branch -a`
-`git branch -d test`
+`git branch -a`\
+`git branch -d test`\
 `git branch -D test (This will delete the branch regardless of its merge status)`
 
 **Delete git remote branch**

@@ -85,16 +85,6 @@ click install, just agree and choose complete installation
 - you should see mongosh log id, connection and other information
 
 ---
-
-# Developers setup
-
-
-| count | content | details                              |
-| ----- | ------- | ------------------------------------ |
-| [1]()   | git     | git device setup and commands        |
-| [2](####VS-code-snippets)   | vscode  | setup vs code as default code editor |
-
----
 ### Git configuration
 
 **INSTALL GIT BASH**

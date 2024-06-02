@@ -202,7 +202,7 @@ git config --global user.name YOUR_USERNAME
 
 setting snippets as global across the editor. Open vscode code editor. Press `ctrl+shift+p`. Type `snippets`. click `snippets: configre user snippets`. and choose `new global snippets file`. Name it and paste the following code.
 
-```json
+```
 {
   // javascript
 
@@ -321,18 +321,19 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 - search for `open user settings (json)`
 - paste the copied code here and save
 
-```json
+```
 {
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
 
   // <-- editor -->
-  "editor.fontFamily": "cascadia code, jetbrains mono, monospace",
-  "editor.fontSize": 14.5,
+  "editor.fontFamily": "cascadia code,jetbrains mono, monospace",
+  // "editor.fontSize": 14.5,
+  "editor.fontSize": 16,
   "editor.fontLigatures": "'calt', 'ss01'",
   "editor.fontWeight": "400",
   "editor.cursorWidth": 3,
   "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "phase",
+  "editor.cursorBlinking": "blink",
   "editor.cursorSmoothCaretAnimation": "off",
   "editor.cursorSurroundingLines": 8,
   "editor.smoothScrolling": true,
@@ -349,15 +350,17 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "on",
   "editor.glyphMargin": false,
+  "editor.stickyScroll.enabled": false,
+
   // "editor.folding": false,
   // "editor.renderWhitespace": "boundary",
 
   //** set default formatter specifically
   "[html]": {
-    // "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascriptreact]": {
-    // "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
 
   "[java]": {
@@ -366,8 +369,8 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 
   //** <-- terminal -->
   "terminal.integrated.tabs.location": "left",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "caskaydiacove nerd font",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "cascadia code",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.cursorBlinking": true,
@@ -375,7 +378,7 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "debug.console.fontSize": 20,
 
   //** inegretd terminal switch to terminal from powershell -->
-  "terminal.integrated.defaultProfile.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.profiles.windows": {
     "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
       "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -404,24 +407,30 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   //** <-- workbench -->
   "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {
+    "tab.inactiveForeground": "#e9e9e9",
+    "tab.activeForeground": "#ffffff"
     /*    
-    "editorIndentGuide.activeBackground": "#b9b9b9",
-    "statusBar.background": "#222225",
-    "statusBar.noFolderBackground": "#222225",
-    "statusBar.debuggingBackground": "#511f1f"
-    "editorWhitespace.foreground": "#606b8d"
-    */
+      "editorIndentGuide.activeBackground": "#b9b9b9",
+      "statusBar.background": "#222225",
+      "statusBar.noFolderBackground": "#222225",
+      "statusBar.debuggingBackground": "#511f1f"
+      "editorWhitespace.foreground": "#606b8d"
+      */
   },
+
+  "editor.tokenColorCustomizations": {
+    "comments": "#7bb575"
+  },
+
   "workbench.productIconTheme": "fluent-icons",
   "notebook.lineNumbers": "on",
   "notebook.markup.fontSize": 17,
   "[python]": {
     "editor.formatOnType": true
   },
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.iconTheme": "material-icon-theme",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "window.menuBarVisibility": "compact",
-  "window.zoomLevel": 1,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // all c/c++ config
@@ -431,10 +440,19 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "code-runner.runInTerminal": true,
-  "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe"
+  "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
+  "liveServer.settings.donotVerifyTags": true,
+  "explorer.confirmDelete": false,
+  "window.commandCenter": false,
+  "workbench.colorTheme": "GitHub Dark Default",
+  "reactSnippets.settings.importReactOnTop": false
 }
+
 
 
 

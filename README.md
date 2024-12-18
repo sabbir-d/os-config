@@ -17,12 +17,6 @@
 - [figma](https://www.figma.com/download/desktop/win)
 
 
-## CODING FONT
-
-[jetbrains mono](https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip)\
-[fira code](https://fonts.google.com/specimen/Fira+Code)
-
-
 ## INSTALL POSTMAN
 
 [postman for desktop](https://dl.pstmn.io/download/latest/win64)
@@ -325,7 +319,7 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 - search for `open user settings (json)`
 - paste the copied code here and save
 
-```
+```json
 {
   "breadcrumbs.enabled": false,
   "window.menuBarVisibility": "compact",
@@ -448,6 +442,14 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "window.commandCenter": false,
   "reactSnippets.settings.importReactOnTop": false,
   "liveServer.settings.donotShowInfoMsg": true
+}
+
+```
+```.prettierrc
+{
+  "jsxBracketSameLine": true,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindAttributes": ["css"]
 }
 
 ```

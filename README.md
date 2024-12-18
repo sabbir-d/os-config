@@ -236,7 +236,7 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 		"description": ""
 	},
 	
-	//  dom customize
+
 	"html tag": {
 		"prefix": "tag",
 		"body": "<$1 className={`$2`}>$0</$1>",

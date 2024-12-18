@@ -203,112 +203,116 @@ git config --global user.name YOUR_USERNAME
 setting snippets as global across the editor. Open vscode code editor. Press `ctrl+shift+p`. Type `snippets`. click `snippets: configre user snippets`. and choose `new global snippets file`. Name it and paste the following code.
 
 ```
+// javascript
 {
-  // javascript
-
-  "console output": {
-    "prefix": "clog",
-    "body": "console.log($0)",
-    "description": ""
-  },
-
-  // javascript functions
-
-  "regular function": {
-    "prefix": "fun",
-    "body": "function ${1:name}(${2:arg} {$0})",
-    "description": ""
-  },
-
-  "regular async function": {
-    "prefix": "afun",
-    "body": "async function ${1:name}(${2:arg} {$0})",
-    "description": ""
-  },
-
-  "arrow function": {
-    "prefix": "arrow",
-    "body": "const ${1:name} = (${2:arg}) => {$0}",
-    "description": ""
-  },
-
-  "arrow async function": {
-    "prefix": "aarrow",
-    "body": "const ${1:name} = async (${2:arg}) => {$0}",
-    "description": ""
-  },
-
-  "anonymous arrow function": {
-    "prefix": ">>",
-    "body": "(${1}) => $0",
-    "description": ""
-  },
-
-  //  dom customize
-  "html tag": {
-    "prefix": "tag",
-    "body": "<$1>$0</$1>",
-    "description": ""
-  },
-
-  "document id": {
-    "prefix": "docid",
-    "body": "document.getElementById('$0')"
-  },
-
-  "query selector id": {
-    "prefix": "qs",
-    "body": "document.querySelector('#$0')"
-  },
-
-  "query selector class": {
-    "prefix": "cqs",
-    "body": "document.querySelector('.$0')"
-  },
-
-  "query selector class all": {
-    "prefix": "cqsa",
-    "body": "document.querySelectorAll('.$0')"
-  },
-
-  // react or solid js
-
-  "use state": {
-    "prefix": "cstate",
-    "body": [
-      "const [${1:name}, set${1/(.*)/${1:/capitalize}/}] = useState$0($2)"
-    ]
-  },
-
-  "use effect": {
-    "prefix": "signal",
-    "body": ["useEffect$0 (() => {\t\n},[${1:dependency}])"]
-  },
-
-  // smbols
-  "copyright": {
-    "prefix": "cr",
-    "body": "&copy;",
-    "description": ""
-  },
-
-  "and": {
-    "prefix": "and",
-    "body": "&",
-    "description": ""
-  },
-
-  "hash": {
-    "prefix": "hash",
-    "body": "#",
-    "description": ""
-  },
-
-  "": {
-    "prefix": "",
-    "body": "",
-    "description": ""
-  }
+	"console output": {
+		"prefix": "clog",
+		"body": "console.log($0)",
+		"description": ""
+	},
+	
+	// javascript functions
+	
+	"regular function": {
+		"prefix": "fun",
+		"body": "function ${1:name}(${2:arg}) {$0}",
+		"description": ""
+	},
+	
+	"regular async function": {
+		"prefix": "funf",
+		"body": "async function ${1:name}(${2:arg}) {$0}",
+		"description": ""
+	},
+	
+	"arrow function": {
+		"prefix": "af",
+		"body": "const ${1:name} = (${2:arg}) => {$0}",
+		"description": ""
+	},
+	
+	"arrow async function": {
+		"prefix": "aff",
+		"body": "const ${1:name} = async (${2:arg}) => {$0}",
+		"description": ""
+	},
+	
+	"anonymous arrow function": {
+		"prefix": "aaf",
+		"body": "(${1}) => $0",
+		"description": ""
+	},
+	
+	//  dom customize
+	"html tag": {
+		"prefix": "tag",
+		"body": "<$1 className={`$2`}>$0</$1>",
+		"description": ""
+	},
+	
+	"document id": {
+		"prefix": "docid",
+		"body": "document.getElementById('$0')"
+	},
+	
+	"query selector id": {
+		"prefix": "qs",
+		"body": "document.querySelector('#$0')"
+	},
+	
+	"query selector class": {
+		"prefix": "cqs",
+		"body": "document.querySelector('.$0')"
+	},
+	
+	"query selector class all": {
+		"prefix": "cqsa",
+		"body": "document.querySelectorAll('.$0')"
+	},
+	
+	// react or solid js
+	
+	"use state": {
+		"prefix": "cstate",
+		"body": [
+			"const [${1:name}, set${1/(.*)/${1:/capitalize}/}] = useState$0($2)"
+		]
+	},
+	
+	"use effect": {
+		"prefix": "signal",
+		"body": ["useEffect$0 (() => {\t\n},[${1:dependency}])"]
+	},
+	
+	"pass props": {
+		"prefix": "pass",
+		"body": ["${1:propname}={${0:prop}}"]
+	},
+	
+	"class name": {
+		"prefix": "cn",
+		"body": ["className={`${0}`}"]
+	},
+	
+		"React Functional Component with Props": {
+			"prefix": "rfc-props",
+			"body": [
+				"type ${1:ComponentName}Props = {",
+				"  children: React.ReactNode;",
+				"};",
+				"",
+				"const ${1:ComponentName} = ({ children }: ${1:ComponentName}Props) => {",
+				"  return (",
+				"    ${2:<div>}{children}</div>",
+				"  );",
+				"};",
+				"",
+				"export default ${1:ComponentName};"
+			],
+			"description": "Creates a React functional component with TypeScript props."
+		}
+	
+	
 }
 
 ```
@@ -323,14 +327,13 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 
 ```
 {
-  "breadcrumbs.enabled": true,
-
+  "breadcrumbs.enabled": false,
+  "window.menuBarVisibility": "compact",
   // <-- editor -->
-  "editor.fontFamily": "cascadia code,jetbrains mono, monospace",
-  // "editor.fontSize": 14.5,
-  "editor.fontSize": 16,
+  "editor.fontFamily": "cascadia code, jetbrains mono, monospace",
+  "editor.fontSize": 15.5,
   "editor.fontLigatures": "'calt', 'ss01'",
-  "editor.fontWeight": "400",
+  "editor.fontWeight": "380",
   "editor.cursorWidth": 3,
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "blink",
@@ -351,20 +354,19 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "editor.lineNumbers": "on",
   "editor.glyphMargin": false,
   "editor.stickyScroll.enabled": false,
-
+  "editor.lightbulb.enabled": "off",
   // "editor.folding": false,
   // "editor.renderWhitespace": "boundary",
 
-  //** set default formatter specifically
+  "editor.tokenColorCustomizations": {
+    "comments": "#759272"
+  },
+
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
   },
 
   //** <-- terminal -->
@@ -387,7 +389,7 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   },
 
   //** <-- other -->
-  "files.defaultLanguage": "javascript",
+  "files.defaultLanguage": "typescript",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1050,
   "zenMode.fullScreen": false,
@@ -395,7 +397,6 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "breadcrumbs.symbolPath": "off",
   "explorer.compactFolders": false, // expands folder structre even for the single file
 
-  //** react -->
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "vue-html": "html",
@@ -405,12 +406,16 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   },
 
   //** <-- workbench -->
+  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
+  "workbench.editor.showTabs": "single",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
   "workbench.colorCustomizations": {
     "tab.inactiveForeground": "#e9e9e9",
-    "tab.activeForeground": "#ffffff"
+    "tab.activeForeground": "#ffffff",
+    "editorIndentGuide.activeBackground1": "#2bff00"
     /*    
-      "editorIndentGuide.activeBackground": "#b9b9b9",
       "statusBar.background": "#222225",
       "statusBar.noFolderBackground": "#222225",
       "statusBar.debuggingBackground": "#511f1f"
@@ -418,19 +423,12 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
       */
   },
 
-  "editor.tokenColorCustomizations": {
-    "comments": "#7bb575"
-  },
-
-  "workbench.productIconTheme": "fluent-icons",
   "notebook.lineNumbers": "on",
   "notebook.markup.fontSize": 17,
   "[python]": {
     "editor.formatOnType": true
   },
-  "workbench.iconTheme": "material-icon-theme",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "window.menuBarVisibility": "compact",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // all c/c++ config
@@ -444,16 +442,12 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
   "C_Cpp.clang_format_fallbackStyle": "Google",
-  "code-runner.runInTerminal": true,
   "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
   "liveServer.settings.donotVerifyTags": true,
   "explorer.confirmDelete": false,
   "window.commandCenter": false,
-  "workbench.colorTheme": "GitHub Dark Default",
-  "reactSnippets.settings.importReactOnTop": false
+  "reactSnippets.settings.importReactOnTop": false,
+  "liveServer.settings.donotShowInfoMsg": true
 }
-
-
-
 
 ```

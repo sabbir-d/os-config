@@ -177,7 +177,7 @@ git config --global user.name YOUR_USERNAME
 ---
 ### vscode configuration
 [vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)
-**list of extension**
+**list of extension**\
 ✅ better comments\
 ✅ es7+react/redux native snippets\
 ✅ tailwindcss intellisnense\

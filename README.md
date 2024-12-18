@@ -196,16 +196,15 @@ git config --global user.name YOUR_USERNAME
 
 setting snippets as global across the editor. Open vscode code editor. Press `ctrl+shift+p`. Type `snippets`. click `snippets: configre user snippets`. and choose `new global snippets file`. Name it and paste the following code.
 
-```
-// javascript
+```json
+
 {
-	"console output": {
-		"prefix": "clog",
-		"body": "console.log($0)",
-		"description": ""
+"console output": {
+	"prefix": "clog",
+	"body": "console.log($0)",
+	"description": ""
 	},
 	
-	// javascript functions
 	
 	"regular function": {
 		"prefix": "fun",
@@ -264,7 +263,6 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 		"body": "document.querySelectorAll('.$0')"
 	},
 	
-	// react or solid js
 	
 	"use state": {
 		"prefix": "cstate",
@@ -445,7 +443,8 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 }
 
 ```
-```.prettierrc
+```json
+.prettierrc
 {
   "jsxBracketSameLine": true,
   "plugins": ["prettier-plugin-tailwindcss"],

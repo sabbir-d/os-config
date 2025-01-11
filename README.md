@@ -320,15 +320,14 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 ```json
 {
   "breadcrumbs.enabled": false,
-  "window.menuBarVisibility": "compact",
-  // <-- editor -->
-  "editor.fontFamily": "cascadia code, jetbrains mono, monospace",
-  "editor.fontSize": 15.5,
-  "editor.fontLigatures": "'calt', 'ss01'",
-  "editor.fontWeight": "380",
-  "editor.cursorWidth": 3,
-  "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "blink",
+  // "editor.fontFamily": "mononoki",
+  "editor.fontFamily": "cascadia code",
+
+  // "editor.fontFamily": "monaspace neon",
+  // "editor.fontFamily": "fira code",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": "'calt','cv01', 'cv02', 'cv06','cv13', 'cv14', 'cv18', 'cv27', 'cv31','ss01','ss02', 'ss03','ss04','ss05','ss08'",
+  "editor.fontWeight": "400",
   "editor.cursorSmoothCaretAnimation": "off",
   "editor.cursorSurroundingLines": 8,
   "editor.smoothScrolling": true,
@@ -349,28 +348,21 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "editor.lightbulb.enabled": "off",
   // "editor.folding": false,
   // "editor.renderWhitespace": "boundary",
-
   "editor.tokenColorCustomizations": {
-    "comments": "#759272"
+    
   },
-
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-
   //** <-- terminal -->
   "terminal.integrated.tabs.location": "left",
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontFamily": "cascadia code",
+  "terminal.integrated.fontFamily": "cascadia code, jetbrains mono, monospace",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.cursorBlinking": true,
   "debug.console.fontFamily": "consolas",
-  "debug.console.fontSize": 20,
-
+  "debug.console.fontSize": 16,
   //** inegretd terminal switch to terminal from powershell -->
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.profiles.windows": {
@@ -379,7 +371,6 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
       "args": []
     }
   },
-
   //** <-- other -->
   "files.defaultLanguage": "typescript",
   "files.autoSave": "afterDelay",
@@ -388,19 +379,8 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "tailwindCSS.emmetCompletions": true,
   "breadcrumbs.symbolPath": "off",
   "explorer.compactFolders": false, // expands folder structre even for the single file
-
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "vue-html": "html",
-    "razor": "html",
-    "plaintext": "jade"
-    // inclued html emmet to js file
-  },
-
-  //** <-- workbench -->
-  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.editor.showTabs": "single",
+  "workbench.editor.showTabs": "multiple",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.colorCustomizations": {
@@ -414,7 +394,6 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
       "editorWhitespace.foreground": "#606b8d"
       */
   },
-
   "notebook.lineNumbers": "on",
   "notebook.markup.fontSize": 17,
   "[python]": {
@@ -422,24 +401,13 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-
-  // all c/c++ config
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-  "C_Cpp.clang_format_fallbackStyle": "Google",
-  "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
   "liveServer.settings.donotVerifyTags": true,
   "explorer.confirmDelete": false,
-  "window.commandCenter": false,
   "reactSnippets.settings.importReactOnTop": false,
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "workbench.colorTheme": "Anysphere dark"
 }
 
 ```

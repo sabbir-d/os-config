@@ -6,16 +6,25 @@
 
 ## DOWNLOAD OTHER ESSENTIAL APPS
 
-- [winrar](https://www.win-rar.com/postdownload.html?&L=0)
 - [discord](https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86)
-- [afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
+- [brave](https://brave.com/)
+- [winrar](https://www.win-rar.com/postdownload.html?&L=0)
 - [slack](https://slack.com/api/desktop.latestRelease?arch=ia32&variant=exe&redirect=true)
-- [vlc](https://get.videolan.org/vlc/3.0.18/win32/vlc-3.0.18-win32.exe)
+- [afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
 - [obs](https://cdn-fastly.obsproject.com/downloads/OBS-Studio-29.0.2-Full-Installer-x64.exe)
+- [vlc](https://get.videolan.org/vlc/3.0.18/win32/vlc-3.0.18-win32.exe)
 - [steam](https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe)
 - [epic](https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi)
 - [figma](https://www.figma.com/download/desktop/win)
-
+- [.net sdk lts](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks)
+- [python](https://www.python.org/)
+- [c++](https://code.visualstudio.com/docs/cpp/config-mingw)
+- [java](https://aws.amazon.com/corretto/)
+- [audio relay](https://audiorelay.net/downloads)
+- [rtx voice](https://www.nvidia.com/en-us/geforce/guides/nvidia-rtx-voice-setup-guide/)
+- [avro](https://www.omicronlab.com/avro-keyboard-download.html)
+- [power toys](https://learn.microsoft.com/en-us/windows/powertoys/)
+- [razer software](https://www.razer.com/synapse-4)
 
 ## INSTALL POSTMAN
 
@@ -176,21 +185,25 @@ git config --global user.name YOUR_USERNAME
 
 ---
 ### vscode configuration
-[vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)
+[vscode download link](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user)\
 **list of extension**\
-✅ better comments\
-✅ es7+react/redux native snippets\
-✅ tailwindcss intellisnense\
+✅ anysphere dark\
+✅ aura theme\
 ✅ auto rename tag\
+✅ cline\
+✅ color highlight\
+✅ continue\
+✅ es7+ react/redux\
+✅ fluent icons\
+✅ copilot\
+✅ hide files\
+✅ live server\
+✅ markdown github style\
 ✅ material icon theme\
-✅ monokai pro theme\
-✅ markdown preview github styling\
-✅ prettier code formatter\
-✅ live server (for vanila html, css, js project)\
-✅ live share (for sharing code)\
-✅ code runner (for c++ or python)\
-✅ fluent icons (minimul interface icons)\
-✅ quokka.js (inline code runner)
+✅ prettier\
+✅ tailwindcss intellisense\
+✅ c/c++ 76m\
+✅ code runner\
 
 **VS code snippets**
 

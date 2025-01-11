@@ -1,10 +1,18 @@
-## DRIVERS
+### Drivers
+watch these videos before installing gpu drivers
+
+[optimize driver guide](https://www.youtube.com/watch?v=B4baN3b8oOE&t=0s)\
+[proper install guide](https://www.youtube.com/watch?v=98DAgw1KcmI)
 
 - [nvidia](https://www.nvidia.com/en-us/geforce/drivers/)
 - [amd](https://www.amd.com/en/support)
 - for **realtek** audio visit motherboard manufacturer website
+  - [asus](https://www.asus.com/support/download-center/)
+  - [asrock](https://www.asrock.com/support/index.asp?cat=Drivers)
+  - msi - individual motherboard
+  - gigabyte - individual motherboard
 
-## DOWNLOAD OTHER ESSENTIAL APPS
+### Other Apps
 
 - [discord](https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86)
 - [brave](https://brave.com/)
@@ -25,39 +33,24 @@
 - [avro](https://www.omicronlab.com/avro-keyboard-download.html)
 - [power toys](https://learn.microsoft.com/en-us/windows/powertoys/)
 - [razer software](https://www.razer.com/synapse-4)
+- [postman](https://dl.pstmn.io/download/latest/win64)
+- [warp](https://one.one.one.one/)
+- [twinkle tray](https://twinkletray.com/)
 
-## INSTALL POSTMAN
+### Browser Extension
+- darkreader
+- tempmail
+- ublock origin
+- esuit fb ad blocker
 
-[postman for desktop](https://dl.pstmn.io/download/latest/win64)
+### Install NodeJs
 
----
-
-## INSTALL NODE
-
-[node download link](https://nodejs.org/en/download)
+[node download](https://nodejs.org/en/download)
 
 - download LTS version for windows x64 .msi installer
 
 ```bash
 just agree and click next next
-```
-
-### _for yarn users install yarn globally_
-
-- although node comes with built in npm package manager if u wish u can use yarn as package manager by installing yarn globally
-
-```bash
-npm install --global yarn
-```
-
-### _install nodemon globally for backend_
-
-- for realtime load of backend server
-
-```bash
-npm install -g nodemon
-#or
-yarn global add nodemon
 ```
 
 ---
@@ -123,7 +116,7 @@ ssh-keygen -t rsa -b 4096 -C YOUR_EMAIL
 
 use the command above in terminal. go to `C:\Users\[username]\.ssh` this location and open the folder in an editor. open `id_ed25519.pub` and copy the full ssh key. go to this [link](https://github.com/settings/keys) click on `new ssh key`. give a title and paste the copied key at key field. now github should recognize your device.
 
-**User login**
+**User login**\
 open terminal and follow the command below
 ```
 git config --global user.email YOUR_EMAIL
@@ -132,56 +125,55 @@ git config --global user.name YOUR_USERNAME
 
 **Basic commands**
 
-`git clone url`\
-`git remote set-url origin url`\
-`git remote -v`\
-`git status`\
-`git add .`\
-`git commit -m 'cloned commit'`\
-`git push -u origin main`
+<details>
+<summary>click to see basic commands</summary>
 
-**Clone repo with commits**
 
-`git clone --bare <original-url>`\
-`git push --mirror <new-url>`\
-`git remote -v`\
-`get remote set-url origin <new-url>`
+### Simple commands
+git clone url\
+git remote set-url origin url\
+git remote -v\
+git status\
+git add .\
+git commit -m 'cloned commit'\
+git push -u origin main
 
-**Clone remote branch**
+### Clone repo with commits
+git clone --bare <original-url>\
+git push --mirror <new-url>\
+git remote -v\
+get remote set-url origin <new-url>
 
-`git clone <your-repo-url>`\
-`cd my-cloned-project-folder`\
-`git branch -a`\
-`git checkout <branch-name>`
+### Clone remote branch
+git clone <your-repo-url>\
+cd my-cloned-project-folder\
+git branch -a\
+git checkout <branch-name>
 
-**Set remote to, already created remote repo with readme file**
+### Set remote to, already created remote repo with readme file
+git branch -M main\
+git remote add <origin-url>\
+git pull origin main\
+add .\
+commit -m ‘first commit’\
+git push -u origin main
 
-`git branch -M main`\
-`git remote add <origin-url>`\
-`git pull origin main`\
-`add .`\
-`commit -m ‘first commit’`\
-`git push -u origin main`
+### fix (another branch is pushing conflict) (tags-fast forward, git pull)
+git checkout master\
+git pull origin
 
-**Git another branch is pushing conflict (tags-fast forward, git pull)**
+### Delete git local branch
+git branch -a\
+git branch -d test\
+git branch -D test (This will delete the branch regardless of its merge status)
 
-`git checkout master`\
-`git pull origin`
+### Delete git remote branch
+git push origin --delete <branch-name>
 
-**Delete git local branch**
+### Clone branch from remote repo
+git clone --single-branch -b <branchname-url >
 
-`git branch -a`\
-`git branch -d test`\
-`git branch -D test (This will delete the branch regardless of its merge status)`
-
-**Delete git remote branch**
-
-`git push origin --delete <branch-name>`
-
-**Clone branch from remote repo**
-
-`git clone --single-branch -b <branchname-url >`
-
+</details>
 
 ---
 ### vscode configuration
@@ -203,14 +195,18 @@ git config --global user.name YOUR_USERNAME
 ✅ prettier\
 ✅ tailwindcss intellisense\
 ✅ c/c++ 76m\
-✅ code runner\
+✅ code runner
 
-**VS code snippets**
+### VS code settings
+
+**Snippets setting**
 
 setting snippets as global across the editor. Open vscode code editor. Press `ctrl+shift+p`. Type `snippets`. click `snippets: configre user snippets`. and choose `new global snippets file`. Name it and paste the following code.
 
-```json
+<details>
+<summary>click to see the snippets</summary>
 
+<pre>
 {
 "console output": {
 	"prefix": "clog",
@@ -320,17 +316,22 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
 	
 }
 
-```
+</pre>
+</details>
+
+---
+
 
 **Editor interface and ueses setting**
-
 - copy full json code from the link above
 - open vscode
 - press ctrl + shift + p
 - search for `open user settings (json)`
 - paste the copied code here and save
 
-```json
+<details >
+<summary>click to see the settings.json</summary>
+<pre>
 {
   "breadcrumbs.enabled": false,
   // "editor.fontFamily": "mononoki",
@@ -422,14 +423,19 @@ setting snippets as global across the editor. Open vscode code editor. Press `ct
   "window.commandCenter": false,
   "workbench.colorTheme": "Anysphere dark"
 }
+</pre>
+</details>
 
-```
-```json
-.prettierrc
+---
+<details >
+<summary>click to see the .prettierrc</summary>
+<pre>
 {
   "jsxBracketSameLine": true,
   "plugins": ["prettier-plugin-tailwindcss"],
   "tailwindAttributes": ["css"]
 }
+</pre>
+</details>
 
-```
+---

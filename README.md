@@ -67,17 +67,15 @@ click install, just agree and choose complete installation
 
 [mongodb shell download](https://downloads.mongodb.com/compass/mongodb-mongosh_1.6.1_amd64.deb?_ga=2.66967086.1814885739.1671987424-986248264.1671987424)
 
-- mongo shell (interactive JavaScript interface to MongoDB) which will allow us to iterect with database using command line
-- unzip the file and rename it something like **mongosh**
-- move this mongosh folder to this location
-  > `C:\Program Files`
-- now press start button and type **environment variables**
-- open **_edit environment variable_** inside **advance** tab at the bottom open **enviroment variables**
+- unzip the downloaded file and rename it something like `mongosh`
+- move the `mongosh` folder to `C:\Program Files`
+- start button and type **environment variables**. open it.
+- go to advance tab. click **enviroment variables** at the bottom.
 - in **system variables** select **path** and click **edit**
-- click new and paste this location url
+- create a new variable with the following url
   > `C:\Program Files\mongosh\bin`
-- click ok and get out of there
-- now open a new terminal and type **mongosh** and press enter
+- click ok and exit.
+- start a terminal or cmd. type **mongosh** and press enter
 - you should see mongosh log id, connection and other information
 
 ---
@@ -88,7 +86,7 @@ click install, just agree and choose complete installation
 download gitbash from [official website](https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe)
 
 - install git bash keeping all the settings to default
-- click next next
+- click next ... next ...
 
 **INSTALL WINDOWS TERMINAL**
 
@@ -100,12 +98,13 @@ download gitbash from [official website](https://github.com/git-for-windows/git/
    - change the name to **gitbash** or **bash** upon ur like
    - replace the command line url with gitbash url
      > `C:\Program Files\Git\bin\bash.exe`
-   - choose custom icon or use default gitbsh icon from this location
+   - choose custom icon of your choice or use default gitbsh icon from the location below
      > `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
    - go startup tab and choose gitbash as default profile
 
-**connect github with your system using SSH key**
-
+**connect github with your pc using SSH key**
+- open terminal
+- paste the following command
 ```
 ssh-keygen -t ed25519-sk -C YOUR_EMAIL
 ```
@@ -114,7 +113,14 @@ ssh-keygen -t ed25519-sk -C YOUR_EMAIL
 ssh-keygen -t rsa -b 4096 -C YOUR_EMAIL
 ```
 
-use the command above in terminal. go to `C:\Users\[username]\.ssh` this location and open the folder in an editor. open `id_ed25519.pub` and copy the full ssh key. go to this [link](https://github.com/settings/keys) click on `new ssh key`. give a title and paste the copied key at key field. now github should recognize your device.
+- go to `C:\Users\[username]\.ssh`
+- open editor inside current directory
+- open `id_ed25519.pub` and copy the full ssh key
+- go to this [link](https://github.com/settings/keys)
+- click on `new ssh key`.
+- give a title and paste the copied key at key field.\
+
+now github should recognize your device.
 
 **User login**\
 open terminal and follow the command below
@@ -123,7 +129,7 @@ git config --global user.email YOUR_EMAIL
 git config --global user.name YOUR_USERNAME
 ```
 
-**Basic commands**
+**Git Basic Commands**
 
 <details>
 <summary>click to see basic commands</summary>

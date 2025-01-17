@@ -16,6 +16,8 @@ watch these videos before installing gpu drivers
 
 - [discord](https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86)
 - [brave](https://brave.com/)
+- [arc browser](https://arc.net/)
+- [nilesoft shell](https://nilesoft.org/)
 - [winrar](https://www.win-rar.com/postdownload.html?&L=0)
 - [slack](https://slack.com/api/desktop.latestRelease?arch=ia32&variant=exe&redirect=true)
 - [afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
@@ -36,6 +38,7 @@ watch these videos before installing gpu drivers
 - [postman](https://dl.pstmn.io/download/latest/win64)
 - [warp](https://one.one.one.one/)
 - [twinkle tray](https://twinkletray.com/)
+- [flaw launcher](https://www.flowlauncher.com/)
 
 ### Browser Extension
 - darkreader

@@ -126,9 +126,16 @@ now github should recognize your device.
 open terminal and follow the command below
 ```
 git config --global user.email YOUR_EMAIL
+```
+```
 git config --global user.name YOUR_USERNAME
 ```
 
+try to clone any of your private repository. you will get a warning and given option like
+```
+yes/no/[fingerprint]
+```
+chose yes. and hit enter. you will see file name `known_host` is created that .ssh (`C:\Users\[username]\.ssh`) folder.
 **Git Basic Commands**
 
 <details>

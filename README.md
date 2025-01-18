@@ -1,9 +1,10 @@
-### Drivers
-watch these videos before installing gpu drivers
+### Driver Install
+watch the following tutorials before installing gpu drivers
 
-[optimize driver guide](https://www.youtube.com/watch?v=B4baN3b8oOE&t=0s)\
-[proper install guide](https://www.youtube.com/watch?v=98DAgw1KcmI)
+[video 1 : optimize driver guide](https://www.youtube.com/watch?v=B4baN3b8oOE&t=0s)\
+[video 2 : proper install guide](https://www.youtube.com/watch?v=98DAgw1KcmI)
 
+### Drivers links as follows
 - [nvidia](https://www.nvidia.com/en-us/geforce/drivers/)
 - [amd](https://www.amd.com/en/support)
 - for **realtek** audio visit motherboard manufacturer website
@@ -22,7 +23,6 @@ watch these videos before installing gpu drivers
 - [slack](https://slack.com/api/desktop.latestRelease?arch=ia32&variant=exe&redirect=true)
 - [afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
 - [obs](https://cdn-fastly.obsproject.com/downloads/OBS-Studio-29.0.2-Full-Installer-x64.exe)
-- [vlc](https://get.videolan.org/vlc/3.0.18/win32/vlc-3.0.18-win32.exe)
 - [steam](https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe)
 - [epic](https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi)
 - [figma](https://www.figma.com/download/desktop/win)
@@ -50,7 +50,7 @@ watch these videos before installing gpu drivers
 
 [node download](https://nodejs.org/en/download)
 
-- download LTS version for windows x64 .msi installer
+- download LTS version for windows x64
 
 ```bash
 just agree and click next next
@@ -105,7 +105,7 @@ download gitbash from [official website](https://github.com/git-for-windows/git/
      > `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
    - go startup tab and choose gitbash as default profile
 
-**connect github with your pc using SSH key**
+**Connect github with your pc using SSH key**
 - open terminal
 - paste the following command
 ```
@@ -138,7 +138,10 @@ try to clone any of your private repository. you will get a warning and given op
 ```
 yes/no/[fingerprint]
 ```
-chose yes. and hit enter. you will see file name `known_host` is created that .ssh (`C:\Users\[username]\.ssh`) folder.
+- type `yes` and hit enter
+- a file named `known_host` is being created at .ssh (`C:\Users\[username]\.ssh`) folder.\
+_Done!_
+
 **Git Basic Commands**
 
 <details>
@@ -208,7 +211,7 @@ git clone --single-branch -b <branchname-url >
 ✅ live server\
 ✅ markdown github style\
 ✅ material icon theme\
-✅ prettier\
+✅ prettier code formatter\
 ✅ tailwindcss intellisense\
 ✅ c/c++ 76m\
 ✅ code runner
